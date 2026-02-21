@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import {
   ArrowRight, CheckCircle, Megaphone, Target, Video, Search,
   BarChart3, Users, Lightbulb, Rocket, FileText, TrendingUp,
-  MapPin, Phone, ArrowUpRight
+  Phone, ArrowUpRight
 } from "lucide-react";
 import InquiryForm from "@/components/InquiryForm";
 
@@ -55,7 +55,7 @@ const process = [
   { step: "05", title: "Reporting", desc: "Transparent monthly reports with actionable insights." },
 ];
 
-const locations = ["Colombo", "Kandy", "Gampaha", "Negombo", "Kalutara", "Kurunegala", "Sri Lanka Wide"];
+
 
 const stats = [
   { value: "15,000+", label: "Leads Generated" },
@@ -208,28 +208,6 @@ const Index = () => (
       </div>
     </section>
 
-    {/* LOCATIONS */}
-    <section className="py-20 lg:py-28 bg-secondary">
-      <div className="container mx-auto px-4 text-center">
-        <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Coverage</p>
-        <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-4">
-          Services Across Sri Lanka
-        </h2>
-        <p className="text-muted-foreground text-sm mb-10">
-          We provide social media marketing and digital advertising services in:
-        </p>
-        <div className="flex flex-wrap justify-center gap-2">
-          {locations.map((loc) => (
-            <span
-              key={loc}
-              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-card border border-border text-sm font-medium hover:border-primary/20 transition-colors"
-            >
-              <MapPin className="w-3.5 h-3.5 text-primary" /> {loc}
-            </span>
-          ))}
-        </div>
-      </div>
-    </section>
 
     {/* FINAL CTA + FORM */}
     <section className="py-20 lg:py-28 bg-foreground text-white">
