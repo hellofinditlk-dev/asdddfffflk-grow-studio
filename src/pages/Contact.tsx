@@ -2,8 +2,8 @@ import InquiryForm from "@/components/InquiryForm";
 import { Mail, MapPin, Phone, Clock } from "lucide-react";
 
 const contactInfo = [
-  { icon: <Phone className="w-5 h-5" />, label: "Phone", value: "+94 77 123 4567", href: "tel:+94771234567" },
-  { icon: <Mail className="w-5 h-5" />, label: "Email", value: "info@findit.lk", href: "mailto:info@findit.lk" },
+  { icon: <Phone className="w-5 h-5" />, label: "Phone", value: "+94 70 177 2626", href: "tel:+94701772626" },
+  { icon: <Mail className="w-5 h-5" />, label: "Email", value: "info@cypherdigital.lk", href: "mailto:info@cypherdigital.lk" },
   { icon: <MapPin className="w-5 h-5" />, label: "Location", value: "Colombo, Sri Lanka" },
   { icon: <Clock className="w-5 h-5" />, label: "Working Hours", value: "Mon – Sat, 9AM – 6PM" },
 ];
@@ -47,7 +47,7 @@ const Contact = () => (
               <h3 className="font-heading font-semibold mb-2">Prefer WhatsApp?</h3>
               <p className="text-sm text-muted-foreground mb-4">Chat with us directly for a quick response.</p>
               <a
-                href="https://wa.me/94771234567"
+                href="https://wa.me/94701772626"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[hsl(142,70%,45%)] text-white font-semibold text-sm hover:opacity-90 transition-opacity"
