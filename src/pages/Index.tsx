@@ -30,6 +30,13 @@ const services = [
     link: "/google-ads-sri-lanka",
   },
   {
+    icon: <FileText className="w-5 h-5" />,
+    title: "SEO Services",
+    desc: "Boost your Google rankings with on-page and off-page SEO strategies.",
+    items: ["On-page SEO", "Off-page SEO", "Technical SEO", "Local SEO", "Keyword research"],
+    link: "/seo-services-sri-lanka",
+  },
+  {
     icon: <Video className="w-5 h-5" />,
     title: "Video Production",
     desc: "Professional video content that increases engagement and ad performance.",

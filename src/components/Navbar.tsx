@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Social Media", path: "/social-media-management-sri-lanka" },
   { label: "Facebook Ads", path: "/facebook-ads-sri-lanka" },
   { label: "Google Ads", path: "/google-ads-sri-lanka" },
+  { label: "SEO", path: "/seo-services-sri-lanka" },
   { label: "Video Production", path: "/video-production-sri-lanka" },
   { label: "Contact", path: "/contact" },
 ];
