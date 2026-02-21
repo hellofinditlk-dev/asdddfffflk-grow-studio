@@ -42,7 +42,7 @@ const SocialMediaManagement = () => (
     ]}
     flexibleDescription="Managing social media shouldn't cost a fortune. Cypher Digital offers affordable, flexible social media management packages perfect for small businesses, startups, and growing brands across Sri Lanka. Get professional content and engagement without the overhead of hiring an in-house team."
     flexiblePoints={[
-      "Affordable monthly packages starting from LKR 15,000",
+      "Affordable monthly packages starting from LKR 60,000",
       "Choose 12, 16, or 20+ posts per month",
       "No annual contracts — flexible month-to-month plans",
       "Add-on services like reels or LinkedIn at low cost",
