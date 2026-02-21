@@ -5,7 +5,7 @@ const VideoProduction = () => (
   <ServicePageLayout
     title="Video Production for Social Media Sri Lanka"
     subtitle="Professional Video Content"
-    description="Professional video content that increases engagement and supercharges your ad performance. From promotional videos to short-form reels, we create content that converts."
+    description="Professional video content that increases engagement and supercharges your ad performance. From promotional videos to short-form reels — we deliver cinematic quality at prices that fit any Sri Lankan business budget."
     icon={<Video className="w-7 h-7" />}
     serviceName="video production"
     stats={[
@@ -40,12 +40,22 @@ const VideoProduction = () => (
       { title: "Post-Production", desc: "Expert editing, color grading, motion graphics, and sound design." },
       { title: "Delivery & Optimize", desc: "Multiple formats optimized for each platform — feed, stories, ads." },
     ]}
+    flexibleDescription="High-quality video production doesn't have to cost a fortune. Cypher Digital offers flexible video packages for businesses of every size in Sri Lanka. Whether you need a single product video or a monthly content plan, we deliver professional results within your budget."
+    flexiblePoints={[
+      "Per-video pricing with no minimum order",
+      "Bundle deals for monthly video content packages",
+      "Quick-turnaround reels starting from LKR 5,000",
+      "Flexible shoot schedules — weekdays or weekends",
+      "Reuse footage for multiple formats at no extra cost",
+      "Free creative consultation before every project",
+    ]}
     faqs={[
       { q: "What types of videos do you produce?", a: "We produce promotional videos, social media reels, testimonial videos, product demos, brand stories, event coverage, and ad creatives. Each video is tailored to your specific goals and platform." },
       { q: "How long does a video project take?", a: "Simple social media videos can be delivered within 48–72 hours. Larger productions like brand videos or commercials typically take 1–2 weeks from concept to final delivery." },
       { q: "Do you handle filming or just editing?", a: "We offer both! We can handle the complete process from concept to filming to editing, or we can work with footage you provide. Our team has professional cameras, lighting, and audio equipment." },
       { q: "What formats do you deliver?", a: "We deliver videos in multiple formats optimized for each platform — square (1:1) for Instagram feed, vertical (9:16) for Reels/Stories, landscape (16:9) for YouTube/Facebook, and any custom ratio you need." },
       { q: "Can you create videos for my ad campaigns?", a: "Absolutely! Ad creative videos are one of our specialties. We create thumb-stopping video ads designed specifically for Facebook, Instagram, and Google ad campaigns with proven formats that drive conversions." },
+      { q: "Is video production affordable for small businesses?", a: "Yes! We offer flexible per-video pricing and bundle packages designed for Sri Lankan small businesses. You don't need a massive budget to get professional, scroll-stopping video content." },
     ]}
   />
 );
