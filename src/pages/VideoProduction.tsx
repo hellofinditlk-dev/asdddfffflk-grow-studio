@@ -44,7 +44,7 @@ const VideoProduction = () => (
     flexiblePoints={[
       "Per-video pricing with no minimum order",
       "Bundle deals for monthly video content packages",
-      "Quick-turnaround reels starting from LKR 5,000",
+      "Quick-turnaround reels starting from LKR 15,000",
       "Flexible shoot schedules — weekdays or weekends",
       "Reuse footage for multiple formats at no extra cost",
       "Free creative consultation before every project",

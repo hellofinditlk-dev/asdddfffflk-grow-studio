@@ -44,7 +44,7 @@ const SEOServices = () => (
     ]}
     flexibleDescription="SEO is the most cost-effective long-term marketing investment. Cypher Digital offers affordable, flexible SEO packages for Sri Lankan businesses — from one-time audits to ongoing monthly optimization. No long-term lock-ins, just measurable results that compound over time."
     flexiblePoints={[
-      "Monthly SEO packages starting from LKR 20,000",
+      "Monthly SEO packages starting from LKR 25,000",
       "One-time SEO audit available for new websites",
       "No long-term contracts — month-to-month flexibility",
       "Transparent reporting so you see exactly what you're paying for",
@@ -57,7 +57,7 @@ const SEOServices = () => (
       { q: "Do you guarantee first page rankings?", a: "No ethical SEO agency can guarantee #1 rankings, as Google's algorithm considers 200+ factors. However, we consistently achieve top 10 rankings for targeted keywords through proven white-hat strategies. We focus on driving real traffic and leads, not empty promises." },
       { q: "Is SEO better than Google Ads?", a: "Both have their place. Google Ads delivers instant visibility but stops when you stop paying. SEO takes longer to build but delivers free, ongoing traffic. We recommend combining both — Google Ads for immediate leads and SEO for sustainable long-term growth." },
       { q: "Do you offer local SEO for businesses in Sri Lanka?", a: "Yes! Local SEO is one of our core strengths. We optimize your Google Business Profile, build local citations, and target location-specific keywords to help you rank for searches like 'near me' and city-based queries across Sri Lanka." },
-      { q: "Is SEO affordable for small businesses?", a: "Absolutely. Our packages start from LKR 20,000/month, making professional SEO accessible for small businesses. Unlike paid ads where you pay per click, SEO traffic is free once you rank — making it the most cost-effective marketing channel long-term." },
+      { q: "Is SEO affordable for small businesses?", a: "Absolutely. Our packages start from LKR 25,000/month, making professional SEO accessible for small businesses. Unlike paid ads where you pay per click, SEO traffic is free once you rank — making it the most cost-effective marketing channel long-term." },
     ]}
   />
 );
