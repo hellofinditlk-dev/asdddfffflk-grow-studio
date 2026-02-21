@@ -34,11 +34,11 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-sm font-bold mb-4">Contact</h4>
           <div className="flex flex-col gap-3 text-sm text-muted-foreground">
-            <a href="tel:+94771234567" className="flex items-center gap-2 hover:text-foreground transition-colors">
-              <Phone className="w-3.5 h-3.5" /> +94 77 123 4567
+            <a href="tel:+94701772626" className="flex items-center gap-2 hover:text-foreground transition-colors">
+              <Phone className="w-3.5 h-3.5" /> +94 70 177 2626
             </a>
-            <a href="mailto:info@findit.lk" className="flex items-center gap-2 hover:text-foreground transition-colors">
-              <Mail className="w-3.5 h-3.5" /> info@findit.lk
+            <a href="mailto:info@cypherdigital.lk" className="flex items-center gap-2 hover:text-foreground transition-colors">
+              <Mail className="w-3.5 h-3.5" /> info@cypherdigital.lk
             </a>
             <span className="flex items-center gap-2">
               <MapPin className="w-3.5 h-3.5" /> Colombo, Sri Lanka
