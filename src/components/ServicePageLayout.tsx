@@ -15,6 +15,8 @@ interface ServicePageLayoutProps {
   faqs?: { q: string; a: string }[];
   processSteps?: { title: string; desc: string }[];
   stats?: { value: string; label: string }[];
+  flexibleDescription?: string;
+  flexiblePoints?: string[];
 }
 
 const defaultStats = [
@@ -42,6 +44,8 @@ const ServicePageLayout = ({
   faqs,
   processSteps,
   stats,
+  flexibleDescription,
+  flexiblePoints,
 }: ServicePageLayoutProps) => {
   const displayStats = stats || defaultStats;
 
@@ -176,6 +180,29 @@ const ServicePageLayout = ({
                   <p className="text-sm text-muted-foreground mt-3 leading-relaxed">{faq.a}</p>
                 </details>
               ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Flexible & Cost-Effective */}
+      {flexibleDescription && flexiblePoints && (
+        <section className="py-20 lg:py-28 bg-secondary">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-12">
+                <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Affordable & Scalable</p>
+                <h2 className="font-heading text-2xl md:text-3xl font-extrabold">Flexible & Cost-Effective Solutions</h2>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed text-center mb-10">{flexibleDescription}</p>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {flexiblePoints.map((point, i) => (
+                  <div key={i} className="flex items-start gap-3 bg-card border border-border rounded-xl p-4 hover:border-primary/20 transition-colors">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                    <span className="text-sm">{point}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
