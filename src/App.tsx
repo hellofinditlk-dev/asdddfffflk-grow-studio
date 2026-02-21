@@ -11,6 +11,7 @@ import SocialMediaManagement from "./pages/SocialMediaManagement";
 import FacebookAds from "./pages/FacebookAds";
 import GoogleAds from "./pages/GoogleAds";
 import VideoProduction from "./pages/VideoProduction";
+import SEOServices from "./pages/SEOServices";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/facebook-ads-sri-lanka" element={<FacebookAds />} />
             <Route path="/google-ads-sri-lanka" element={<GoogleAds />} />
             <Route path="/video-production-sri-lanka" element={<VideoProduction />} />
+            <Route path="/seo-services-sri-lanka" element={<SEOServices />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
