@@ -230,22 +230,30 @@ const ServicePageLayout = ({
         </section>
       )}
 
-      {/* CTA */}
-      <section className="bg-foreground py-20">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-white mb-4">Ready to Get Started?</h2>
-          <p className="text-white/50 mb-8 max-w-xl mx-auto text-sm">
-            Generate consistent leads with professional {serviceName} in Sri Lanka.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button asChild className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 rounded-xl h-11 px-6">
-              <Link to="/contact">Book Free Consultation</Link>
-            </Button>
-            <Button asChild variant="outline" className="border-white/15 text-white hover:bg-white/5 rounded-xl h-11 px-6">
-              <a href="https://wa.me/94701772626" target="_blank" rel="noopener noreferrer">
-                Chat on WhatsApp
-              </a>
-            </Button>
+      {/* CTA + Form */}
+      <section className="bg-foreground py-20 lg:py-28">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Get Started</p>
+              <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-white mb-6">Ready to Get Started?</h2>
+              <p className="text-white/50 mb-8 max-w-xl text-sm leading-relaxed">
+                Generate consistent leads with professional {serviceName} in Sri Lanka. Fill in the form and we'll get back to you via WhatsApp.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button asChild className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 rounded-xl h-11 px-6">
+                  <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation" target="_blank" rel="noopener noreferrer">Book Free Consultation</a>
+                </Button>
+                <Button asChild variant="outline" className="border-white/15 text-white hover:bg-white/5 rounded-xl h-11 px-6">
+                  <a href="https://wa.me/94701772626" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+                </Button>
+              </div>
+            </div>
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-7 md:p-8">
+              <h3 className="font-heading text-lg font-bold text-white mb-1.5">Send Us Your Details</h3>
+              <p className="text-sm text-white/40 mb-6">We'll reach out to you on WhatsApp.</p>
+              <InquiryForm service={serviceName} />
+            </div>
           </div>
         </div>
       </section>
