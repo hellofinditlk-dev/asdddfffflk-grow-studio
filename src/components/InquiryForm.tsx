@@ -11,7 +11,6 @@ interface InquiryFormProps {
 
 const InquiryForm = ({ service }: InquiryFormProps) => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
-  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,13 +18,18 @@ const InquiryForm = ({ service }: InquiryFormProps) => {
       toast.error("Please fill in your name and phone number");
       return;
     }
-    setLoading(true);
-    // Simulate submission
-    setTimeout(() => {
-      toast.success("Thank you! We'll contact you within 24 hours.");
-      setForm({ name: "", email: "", phone: "", message: "" });
-      setLoading(false);
-    }, 1000);
+    const message = [
+      `Hi, I'm ${form.name}.`,
+      form.email ? `Email: ${form.email}` : "",
+      `Phone: ${form.phone}`,
+      form.message ? `\n${form.message}` : "",
+      service ? `\nI'm interested in ${service} services.` : "",
+    ].filter(Boolean).join("\n");
+
+    const waUrl = `https://wa.me/94701772626?text=${encodeURIComponent(message)}`;
+    window.open(waUrl, "_blank", "noopener,noreferrer");
+    toast.success("Opening WhatsApp...");
+    setForm({ name: "", email: "", phone: "", message: "" });
   };
 
   return (
@@ -64,11 +68,10 @@ const InquiryForm = ({ service }: InquiryFormProps) => {
       />
       <Button
         type="submit"
-        disabled={loading}
         className="w-full bg-gradient-primary text-primary-foreground font-semibold shadow-glow hover:opacity-90 transition-opacity"
       >
         <Send className="w-4 h-4 mr-2" />
-        {loading ? "Sending..." : "Get Free Consultation"}
+        Send via WhatsApp
       </Button>
     </form>
   );
