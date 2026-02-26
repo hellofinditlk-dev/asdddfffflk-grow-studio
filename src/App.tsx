@@ -16,6 +16,7 @@ import GraphicDesign from "./pages/GraphicDesign";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogPost1 from "./pages/BlogPost1";
+import BlogPost2 from "./pages/BlogPost2";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
             <Route path="/graphic-design-sri-lanka" element={<GraphicDesign />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/why-social-media-management-important-businesses-sri-lanka" element={<BlogPost1 />} />
+            <Route path="/blog/how-consistent-social-media-posting-builds-brand-trust" element={<BlogPost2 />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
