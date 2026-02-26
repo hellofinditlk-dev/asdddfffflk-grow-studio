@@ -9,6 +9,13 @@ const blogPosts = [
     date: "2026-02-26",
     keyword: "Social Media Management Sri Lanka",
   },
+  {
+    slug: "how-consistent-social-media-posting-builds-brand-trust",
+    title: "How Consistent Social Media Posting Builds Brand Trust",
+    excerpt: "Learn how consistent social media posting builds brand trust, improves algorithm reach, and drives long-term growth for Sri Lankan businesses.",
+    date: "2026-02-26",
+    keyword: "Social Media Management Sri Lanka",
+  },
 ];
 
 const Blog = () => (
