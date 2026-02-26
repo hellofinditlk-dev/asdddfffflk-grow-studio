@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cypherdigital.lk/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://cypherdigital.lk/social-media-management-sri-lanka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -36,143 +31,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cypherdigital.lk/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://cypherdigital.lk/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/why-social-media-management-important-businesses-sri-lanka</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/how-consistent-social-media-posting-builds-brand-trust</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/facebook-instagram-management-guide-sri-lankan-brands</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/complete-guide-facebook-ads-businesses-sri-lanka</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/why-video-production-essential-business-growth-sri-lanka</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/importance-professional-graphic-design-modern-brands</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/how-google-ads-helps-businesses-high-intent-customers</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/why-seo-important-long-term-business-growth</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/types-business-videos-increase-engagement-sales</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/how-strong-visual-branding-improves-marketing-performance</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/google-search-ads-vs-display-ads-difference</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/local-seo-strategies-sri-lankan-businesses</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/how-facebook-campaigns-help-businesses-grow-sri-lanka</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/facebook-campaign-strategy-guide-sri-lankan-brands</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/how-ad-videos-increase-conversions-businesses</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/social-media-design-best-practices-better-engagement</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/google-ads-vs-facebook-ads-which-better-business</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/how-to-rank-on-google-sri-lanka-practical-guide</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/benefits-corporate-video-production-brands</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/flyer-design-tips-improve-marketing-results</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/ppc-advertising-explained-sri-lankan-businesses</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/technical-seo-checklist-better-website-performance</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/video-marketing-strategy-guide-sri-lankan-businesses</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/graphic-design-mistakes-damage-brand</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/google-ads-optimization-tips-improve-campaign-performance</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://cypherdigital.lk/blog/on-page-seo-guide-better-rankings</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 </urlset>
