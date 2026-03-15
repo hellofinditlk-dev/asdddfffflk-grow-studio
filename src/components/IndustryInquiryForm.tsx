@@ -73,6 +73,10 @@ const IndustryInquiryForm = ({ fields, ctaButtonText, serviceName }: IndustryInq
         <Send className="w-4 h-4 mr-2" />
         {ctaButtonText}
       </Button>
+      <p className="flex items-center justify-center gap-1.5 text-xs text-muted-foreground">
+        <MessageCircle className="w-3.5 h-3.5" />
+        via WhatsApp
+      </p>
     </form>
   );
 };
