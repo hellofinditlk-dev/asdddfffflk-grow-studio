@@ -53,7 +53,7 @@ export const industries: IndustryData[] = [
     seoTitle: "Hotel Digital Marketing Agency in Sri Lanka | Cypher Digital",
     metaDescription: "Digital marketing services for hotels and resorts in Sri Lanka. Increase bookings with social media marketing, video content, and targeted advertising.",
     h1: "Hotel Digital Marketing Services in Sri Lanka",
-    intro: "Cypher Digital is a leading hotel digital marketing agency in Sri Lanka, helping hotels and resorts increase online visibility, attract international travelers, and boost direct bookings through strategic online marketing.",
+    intro: "Cypher Digital is a leading hotel digital marketing agency in Sri Lanka, helping hotels and resorts increase online visibility, attract international travelers, and boost direct bookings through strategic online marketing. Based in Colombo, we serve hospitality businesses across Sri Lanka with data-driven hotel marketing, resort digital marketing, and tourism marketing strategies.",
     servicesHeading: "Our Hotel Marketing Services",
     services: [
       "Social media marketing for hotels",
@@ -73,10 +73,102 @@ export const industries: IndustryData[] = [
       { name: "budget", placeholder: "Monthly Marketing Budget" },
       { name: "message", placeholder: "Tell us about your hotel marketing needs..." },
     ],
+    // --- Extended SEO content ---
+    challengesHeading: "Common Marketing Challenges Hotels Face",
+    challengesIntro: "The hospitality industry in Sri Lanka has become highly competitive with hundreds of hotels, boutique villas, and resorts competing for visibility online. Many hotels struggle with low direct bookings because they rely heavily on booking platforms instead of strong digital marketing.",
+    challengesList: [
+      "Low visibility on Google search results",
+      "Dependence on third-party booking platforms",
+      "Poor social media engagement",
+      "Lack of professional visual content",
+      "Limited international reach",
+    ],
+    challengesOutro: "Cypher Digital helps hotels overcome these challenges through strategic hotel digital marketing in Sri Lanka, combining search engine optimization, social media marketing, and targeted advertising.",
+    strategy: {
+      heading: "Our Proven Hotel Marketing Strategy",
+      description: "Our hotel marketing strategy focuses on increasing visibility, engagement, and direct bookings through multiple digital channels.",
+      subsections: [
+        {
+          h3: "Search Engine Optimization for Hotels",
+          paragraphs: [
+            "SEO helps hotel websites appear when travelers search for terms such as "hotels in Sri Lanka", "best resorts in Sri Lanka", "luxury hotels Sri Lanka", and "boutique hotels Sri Lanka".",
+          ],
+          bullets: [
+            "Keyword research",
+            "On-page SEO optimization",
+            "Content marketing",
+            "Technical SEO improvements",
+          ],
+        },
+        {
+          h3: "Social Media Marketing for Hotels",
+          paragraphs: [
+            "Social media platforms like Instagram and Facebook are powerful tools for showcasing hotel experiences.",
+          ],
+          bullets: [
+            "Professional hotel photography and video reels",
+            "Travel storytelling content",
+            "Destination promotion",
+            "Guest experience highlights",
+            "Influencer collaborations",
+          ],
+        },
+        {
+          h3: "Paid Advertising Campaigns",
+          paragraphs: [
+            "Paid advertising allows hotels to reach travelers actively searching for accommodation.",
+          ],
+          bullets: [
+            "Facebook & Instagram Ads",
+            "Google Search Ads",
+            "Google Display Ads",
+            "Retargeting campaigns",
+          ],
+        },
+      ],
+    },
+    videoContentHeading: "Professional Video Content for Hotels",
+    videoContentIntro: "Visual content is essential for attracting travelers.",
+    videoContentList: [
+      "Hotel property tours",
+      "Luxury room showcases",
+      "Drone videos of resorts",
+      "Destination marketing videos",
+      "Short social media reels",
+    ],
+    videoContentOutro: "High-quality videos significantly increase engagement and booking conversions.",
+    benefitsHeading: "Why Hotels Need Digital Marketing",
+    benefitsIntro: "Hotels that invest in digital marketing experience measurable growth.",
+    benefitsList: [
+      "Increased direct bookings",
+      "Higher brand awareness",
+      "Improved search engine rankings",
+      "Stronger social media engagement",
+      "Better return on marketing investment",
+    ],
+    benefitsOutro: "Digital marketing allows hotels to attract travelers from both local and international markets.",
+    whyChooseHeading: "Why Choose Cypher Digital for Hotel Marketing",
+    whyChooseIntro: "Cypher Digital is a results-driven digital marketing agency specializing in industry-specific strategies.",
+    whyChooseList: [
+      "Experienced marketing professionals",
+      "Creative content production team",
+      "Data-driven advertising strategies",
+      "Customized marketing solutions for hotels",
+    ],
+    bottomCtaHeading: "Get More Hotel Bookings with Cypher Digital",
+    bottomCtaText: [
+      "If you want to increase your hotel's online visibility and attract more guests, Cypher Digital can help.",
+      "Our hotel marketing experts develop customized strategies that drive bookings, improve brand awareness, and maximize your marketing investment.",
+      "Contact us today for a free hotel marketing consultation.",
+    ],
+    industryLinksHeading: "Digital Marketing Services for Multiple Industries",
+    industryLinksIntro: "In addition to hotel marketing, Cypher Digital provides digital marketing solutions for various industries across Sri Lanka and Colombo:",
     faqs: [
-      { q: "What is digital marketing for hotels?", a: "Hotel digital marketing includes social media management, paid advertising, SEO, and content creation specifically designed to increase hotel bookings and brand visibility online." },
+      { q: "What is hotel digital marketing?", a: "Hotel digital marketing involves promoting hotels online using strategies such as social media marketing, search engine optimization, paid advertising, and video content to increase bookings." },
+      { q: "How can digital marketing increase hotel bookings?", a: "Digital marketing increases visibility on search engines and social media, allowing hotels to reach travelers actively searching for accommodation in Sri Lanka." },
+      { q: "How long does hotel SEO take to show results?", a: "SEO improvements typically show results within 3–6 months depending on competition and website optimization." },
+      { q: "What platforms are best for hotel marketing?", a: "The most effective platforms include Google Search, Instagram, Facebook, and travel-focused content marketing." },
       { q: "How much does hotel digital marketing cost in Sri Lanka?", a: "Our hotel marketing packages start from affordable monthly plans tailored to your property size and goals. Contact us for a custom quote." },
-      { q: "How long does it take to see results?", a: "Most hotels see increased inquiries within the first 2-4 weeks of running targeted ad campaigns, while SEO results typically take 3-6 months." },
     ],
   },
   {
