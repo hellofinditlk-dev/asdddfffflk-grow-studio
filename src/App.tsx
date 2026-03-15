@@ -41,6 +41,7 @@ import BlogPost23 from "./pages/BlogPost23";
 import BlogPost24 from "./pages/BlogPost24";
 import BlogPost25 from "./pages/BlogPost25";
 import BlogPost26 from "./pages/BlogPost26";
+import IndustryPage from "./pages/IndustryPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -89,6 +90,8 @@ const App = () => (
             <Route path="/blog/google-ads-optimization-tips-improve-campaign-performance" element={<BlogPost25 />} />
             <Route path="/blog/on-page-seo-guide-better-rankings" element={<BlogPost26 />} />
             <Route path="/contact" element={<Contact />} />
+            {/* Industry pages */}
+            <Route path="/:slug" element={<IndustryPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
