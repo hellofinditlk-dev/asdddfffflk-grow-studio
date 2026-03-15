@@ -91,7 +91,7 @@ export const industries: IndustryData[] = [
         {
           h3: "Search Engine Optimization for Hotels",
           paragraphs: [
-            "SEO helps hotel websites appear when travelers search for terms such as "hotels in Sri Lanka", "best resorts in Sri Lanka", "luxury hotels Sri Lanka", and "boutique hotels Sri Lanka".",
+            "SEO helps hotel websites appear when travelers search for terms such as 'hotels in Sri Lanka', 'best resorts in Sri Lanka', 'luxury hotels Sri Lanka', and 'boutique hotels Sri Lanka'.",
           ],
           bullets: [
             "Keyword research",
