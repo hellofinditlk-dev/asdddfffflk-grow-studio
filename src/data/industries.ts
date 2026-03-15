@@ -675,9 +675,9 @@ export const industries: IndustryData[] = [
   {
     slug: "education-marketing-agency-sri-lanka",
     seoTitle: "Education Marketing Agency Sri Lanka | Student Lead Generation",
-    metaDescription: "Get more student enrollments with digital marketing for institutes and tuition classes in Sri Lanka.",
-    h1: "Digital Marketing for Institutes & Tuition Classes",
-    intro: "Cypher Digital helps education institutes and tuition classes increase student enrollments through targeted digital marketing campaigns.",
+    metaDescription: "Get more student enrollments with digital marketing for institutes, universities, and tuition classes in Sri Lanka. SEO, social media, and paid ads.",
+    h1: "Digital Marketing for Education Institutes in Sri Lanka",
+    intro: "The education sector has become increasingly competitive as more institutes, universities, and training centers compete to attract students. Today, most students search online to compare courses, institutions, and career opportunities before applying. Cypher Digital helps educational institutions in Sri Lanka and Colombo reach potential students through search engines, social media platforms, and online advertising campaigns. With the right marketing strategy, institutes can build brand awareness, attract more inquiries, and increase student enrollments.",
     servicesHeading: "Education Marketing Services",
     services: [
       "Student lead generation campaigns",
@@ -687,7 +687,7 @@ export const industries: IndustryData[] = [
       "Admission marketing campaigns",
     ],
     ctaHeading: "Increase Student Enrollments",
-    ctaDescription: "Our education marketing campaigns target students and parents actively searching for courses and tuition classes in Sri Lanka.",
+    ctaDescription: "Our education marketing campaigns target students and parents actively searching for courses and tuition classes in Sri Lanka. Digital marketing tools such as social media, SEO, and well-designed websites play a major role in influencing students when selecting universities or courses.",
     ctaButtonText: "Increase Student Enrollments",
     formFields: [
       { name: "name", placeholder: "Your Name *", required: true },
@@ -697,10 +697,93 @@ export const industries: IndustryData[] = [
       { name: "courseType", placeholder: "Course Type" },
       { name: "message", placeholder: "Tell us about your education marketing needs..." },
     ],
+    // --- Extended SEO content ---
+    challengesHeading: "The Growing Importance of Digital Marketing in Education",
+    challengesIntro: "Research shows that digital marketing tools such as social media, search engine optimization, and well-designed websites play a major role in influencing students when selecting universities or courses. Digital platforms allow institutions to communicate directly with prospective students and provide information instantly.",
+    challengesList: [
+      "Increased student enrollments",
+      "Higher online visibility",
+      "Better engagement with prospective students",
+      "Improved brand reputation",
+      "Measurable marketing performance",
+    ],
+    challengesOutro: "Digital marketing also enables institutions to reach students across different locations and provide personalized communication based on their interests.",
+    strategy: {
+      heading: "Key Digital Marketing Strategies for Education Institutes",
+      description: "Cypher Digital uses multiple digital marketing strategies to help institutes in Sri Lanka grow their admissions.",
+      subsections: [
+        {
+          h3: "Search Engine Optimization for Education",
+          paragraphs: [
+            "SEO helps education websites appear on Google when students search for courses or institutes, such as 'best IT courses in Sri Lanka', 'diploma courses in Colombo', and 'higher education institutes Sri Lanka'.",
+          ],
+          bullets: [
+            "Keyword optimization for courses",
+            "On-page SEO for institute websites",
+            "Content marketing with educational guides",
+            "Local SEO for Colombo and other cities",
+          ],
+        },
+        {
+          h3: "Social Media Marketing for Institutes",
+          paragraphs: [
+            "Students spend a significant amount of time on social media platforms such as Instagram, TikTok, Facebook, and YouTube.",
+          ],
+          bullets: [
+            "Course introduction videos",
+            "Student success stories",
+            "Educational reels and short videos",
+            "Campus life highlights",
+            "Open day and event promotions",
+          ],
+        },
+        {
+          h3: "Paid Advertising for Student Recruitment",
+          paragraphs: [
+            "Paid advertising is one of the fastest ways to generate student inquiries and applications.",
+          ],
+          bullets: [
+            "Facebook & Instagram Ads",
+            "Google Search Ads",
+            "YouTube Ads",
+            "Retargeting campaigns",
+          ],
+        },
+      ],
+    },
+    benefitsHeading: "Common Challenges Education Institutes Face",
+    benefitsIntro: "Many institutes struggle with marketing because they rely mainly on traditional promotion methods such as posters, newspaper ads, or events.",
+    benefitsList: [
+      "Low student inquiries",
+      "Limited online presence",
+      "High competition from other institutes",
+      "Ineffective marketing campaigns",
+      "Difficulty reaching students in different locations",
+    ],
+    benefitsOutro: "Digital marketing solves these challenges by helping institutes connect with students where they spend most of their time — online.",
+    whyChooseHeading: "How Cypher Digital Helps Institutes Grow",
+    whyChooseIntro: "Cypher Digital provides customized marketing strategies designed specifically for education providers in Sri Lanka.",
+    whyChooseList: [
+      "Student lead generation campaigns",
+      "Social media marketing for institutes",
+      "SEO optimization for education websites",
+      "Professional video marketing",
+      "Advertising campaign management",
+    ],
+    bottomCtaHeading: "Increase Student Enrollments with Cypher Digital",
+    bottomCtaText: [
+      "If you want to grow your institute and attract more students, Cypher Digital can help.",
+      "Our marketing specialists develop customized strategies that increase visibility, generate student inquiries, and improve enrollments.",
+      "Contact Cypher Digital today for a free education marketing consultation.",
+    ],
+    industryLinksHeading: "Digital Marketing Services for Multiple Industries",
+    industryLinksIntro: "In addition to education marketing, Cypher Digital provides digital marketing solutions for various industries across Sri Lanka:",
     faqs: [
-      { q: "How can digital marketing increase student enrollments?", a: "Targeted Facebook and Google ads reach students and parents actively searching for courses, driving more inquiries and enrollments to your institute." },
-      { q: "Which platforms work best for education marketing?", a: "Facebook, Instagram, and Google Ads are highly effective for reaching students and parents in Sri Lanka." },
-      { q: "How long does it take to see enrollment increases?", a: "Most institutes see increased inquiries within 1-2 weeks of launching targeted ad campaigns." },
+      { q: "What is education digital marketing?", a: "Education digital marketing involves promoting courses, institutes, and universities online using SEO, social media marketing, and paid advertising." },
+      { q: "How can digital marketing increase student enrollments?", a: "Digital marketing helps institutes reach students who are actively searching online for courses, increasing inquiries and applications." },
+      { q: "Which platforms are best for education marketing?", a: "Facebook, Instagram, YouTube, and Google Search are among the most effective platforms for promoting education services." },
+      { q: "How long does education SEO take?", a: "SEO typically takes 3-6 months to generate consistent organic traffic and student inquiries." },
+      { q: "How much does education marketing cost in Sri Lanka?", a: "Our education marketing packages are tailored to your institute size and goals. Contact us for a custom quote." },
     ],
   },
   {
