@@ -426,9 +426,9 @@ export const industries: IndustryData[] = [
   {
     slug: "restaurant-digital-marketing-sri-lanka",
     seoTitle: "Restaurant Marketing Agency Sri Lanka | Social Media Marketing for Restaurants",
-    metaDescription: "Increase restaurant customers with social media marketing, food photography and targeted advertising campaigns.",
-    h1: "Restaurant Social Media Marketing in Sri Lanka",
-    intro: "Cypher Digital helps restaurants and cafes attract more customers through engaging social media content, local advertising, and creative food marketing campaigns.",
+    metaDescription: "Increase restaurant customers with social media marketing, food photography, local SEO, and targeted advertising campaigns in Sri Lanka.",
+    h1: "Digital Marketing for Restaurants in Sri Lanka",
+    intro: "The restaurant industry in Sri Lanka is highly competitive, with new cafes, restaurants, and food brands opening every year. To stand out and attract more customers, restaurants must build a strong online presence. Cypher Digital helps restaurants grow their brand and increase customer visits through digital marketing strategies such as social media marketing, search engine optimization (SEO), paid advertising, and creative food content. Today, the dining journey often begins online — customers search for restaurants on Google, browse menus, read reviews, and check food photos on social media before deciding where to eat.",
     servicesHeading: "Restaurant Marketing Services",
     services: [
       "Food photography and reels",
@@ -438,7 +438,7 @@ export const industries: IndustryData[] = [
       "Event and promotion marketing",
     ],
     ctaHeading: "Get More Customers to Your Restaurant",
-    ctaDescription: "Our food marketing strategies use mouthwatering content and local targeting to fill your tables every day.",
+    ctaDescription: "Our food marketing strategies use mouthwatering content and local targeting to fill your tables every day. By using the right digital marketing strategy, restaurants can increase visibility, attract new customers, and generate repeat visits.",
     ctaButtonText: "Promote My Restaurant",
     formFields: [
       { name: "name", placeholder: "Your Name *", required: true },
@@ -448,10 +448,103 @@ export const industries: IndustryData[] = [
       { name: "location", placeholder: "Location" },
       { name: "message", placeholder: "Tell us about your restaurant marketing needs..." },
     ],
+    // --- Extended SEO content ---
+    challengesHeading: "Why Digital Marketing is Important for Restaurants",
+    challengesIntro: "Modern diners rely heavily on digital platforms when choosing where to eat. Research shows that 41% of diners use social media to research restaurants before visiting, especially younger audiences such as Gen Z and Millennials.",
+    challengesList: [
+      "Increase brand awareness",
+      "Attract new customers",
+      "Promote menu items and special offers",
+      "Improve online reputation",
+      "Increase table reservations and orders",
+    ],
+    challengesOutro: "Restaurants that use strong social media strategies often see more foot traffic, online orders, and customer loyalty.",
+    strategy: {
+      heading: "Our Restaurant Marketing Strategy",
+      description: "Cypher Digital uses a multi-channel approach to help restaurants and cafes in Sri Lanka attract more customers and grow their brand.",
+      subsections: [
+        {
+          h3: "Social Media Marketing for Restaurants",
+          paragraphs: [
+            "Social media platforms like Instagram, Facebook, and TikTok play a major role in restaurant marketing. Food photography and short video content can quickly attract attention and influence dining decisions. Statistics show that 58% of diners follow at least one restaurant on social media, and many customers discover new restaurants through social platforms.",
+          ],
+          bullets: [
+            "Food photography and reels",
+            "Chef behind-the-scenes videos",
+            "Menu highlight posts",
+            "Customer experience videos",
+            "Event and promotion campaigns",
+          ],
+        },
+        {
+          h3: "Local SEO for Restaurants",
+          paragraphs: [
+            "Search engine optimization helps restaurants appear on Google when people search for places to eat nearby, such as 'best restaurants in Colombo', 'cafes near me', 'Sri Lankan restaurants', and 'restaurants in Sri Lanka'.",
+          ],
+          bullets: [
+            "Local SEO optimization",
+            "Google Business profile management",
+            "Keyword optimization",
+            "Website SEO improvements",
+          ],
+        },
+        {
+          h3: "Restaurant Advertising Campaigns",
+          paragraphs: [
+            "Paid advertising is one of the fastest ways to generate restaurant traffic and bookings.",
+          ],
+          bullets: [
+            "Facebook & Instagram Ads",
+            "Google Search Ads",
+            "Google Maps advertising",
+            "Retargeting campaigns",
+          ],
+        },
+      ],
+    },
+    videoContentHeading: "Food Content & Video Marketing",
+    videoContentIntro: "Food is highly visual, and high-quality photos and videos are essential for attracting customers. Many diners choose restaurants based on how the food looks online, especially on social media platforms.",
+    videoContentList: [
+      "Professional food photography",
+      "Short food reels",
+      "Restaurant promotional videos",
+      "Menu showcase videos",
+      "Chef and kitchen behind-the-scenes",
+    ],
+    videoContentOutro: "Engaging visual food content helps restaurants create strong emotional connections with potential diners and drive more visits.",
+    benefitsHeading: "Common Marketing Challenges Restaurants Face",
+    benefitsIntro: "Restaurants often struggle with marketing because they rely only on walk-in customers or outdated marketing strategies.",
+    benefitsList: [
+      "Low social media engagement",
+      "Poor Google visibility",
+      "Lack of professional food photography",
+      "Inconsistent marketing campaigns",
+      "Limited brand awareness",
+    ],
+    benefitsOutro: "Digital marketing solves these challenges by helping restaurants reach customers online and stay visible in a crowded market.",
+    whyChooseHeading: "Why Choose Cypher Digital for Restaurant Marketing",
+    whyChooseIntro: "Cypher Digital specializes in helping restaurants and cafes in Sri Lanka and Colombo grow through digital marketing.",
+    whyChooseList: [
+      "Creative food content creation",
+      "Targeted advertising strategies",
+      "Data-driven marketing campaigns",
+      "Measurable business growth",
+      "Experience with restaurant marketing in Sri Lanka",
+    ],
+    bottomCtaHeading: "Grow Your Restaurant with Cypher Digital",
+    bottomCtaText: [
+      "If you want to attract more customers and increase restaurant revenue, Cypher Digital can help.",
+      "Our restaurant marketing experts create customized digital marketing strategies that increase visibility, engagement, and customer visits.",
+      "Contact Cypher Digital today for a free restaurant marketing consultation.",
+    ],
+    industryLinksHeading: "Digital Marketing Services for Multiple Industries",
+    industryLinksIntro: "In addition to restaurant marketing, Cypher Digital provides digital marketing solutions for various industries across Sri Lanka:",
     faqs: [
-      { q: "How can social media marketing help my restaurant?", a: "Social media marketing helps restaurants attract local customers through engaging food content, reviews, and targeted ads that reach people near your location." },
+      { q: "What is restaurant digital marketing?", a: "Restaurant digital marketing involves promoting restaurants online through social media marketing, search engine optimization, and online advertising campaigns." },
+      { q: "How can digital marketing increase restaurant customers?", a: "Digital marketing increases restaurant visibility online and helps attract customers who are searching for dining options nearby." },
+      { q: "Which platform is best for restaurant marketing?", a: "Instagram, Facebook, TikTok, and Google Search are among the most effective platforms for restaurant marketing." },
+      { q: "How long does restaurant SEO take?", a: "SEO improvements typically take 3-6 months to show strong results depending on competition and optimization." },
       { q: "Do you handle food photography?", a: "Yes, we create professional food photography and video reels that make your dishes look irresistible on social media." },
-      { q: "How much does restaurant marketing cost?", a: "Our restaurant marketing packages are designed to fit various budgets. Contact us for a custom quote based on your goals." },
     ],
   },
   {
