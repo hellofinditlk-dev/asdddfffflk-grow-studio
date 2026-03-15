@@ -1,9 +1,10 @@
-import { CheckCircle, Zap, Shield, BarChart3, Clock, Users } from "lucide-react";
+import { CheckCircle, Zap, Shield, BarChart3, Clock, Users, TrendingUp, Video, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import IndustryInquiryForm from "@/components/IndustryInquiryForm";
 import type { IndustryData } from "@/data/industries";
+import { industries } from "@/data/industries";
 
 const allServices = [
   { name: "Social Media Management", path: "/social-media-management-sri-lanka", keyword: "Social Media Management Sri Lanka" },
@@ -33,6 +34,7 @@ interface Props {
 
 const IndustryPageLayout = ({ data }: Props) => {
   const canonical = `https://cypherdigital.lk/${data.slug}`;
+  const otherIndustries = industries.filter((i) => i.slug !== data.slug);
 
   return (
     <div className="pt-16">
@@ -75,6 +77,34 @@ const IndustryPageLayout = ({ data }: Props) => {
         </div>
       </section>
 
+      {/* Challenges Section (optional) */}
+      {data.challengesHeading && (
+        <section className="py-20 lg:py-28 bg-secondary">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <div className="text-center mb-12">
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Challenges</p>
+              <h2 className="font-heading text-2xl md:text-3xl font-extrabold">{data.challengesHeading}</h2>
+            </div>
+            {data.challengesIntro && (
+              <p className="text-sm text-muted-foreground leading-relaxed mb-8">{data.challengesIntro}</p>
+            )}
+            {data.challengesList && (
+              <div className="space-y-3 mb-8">
+                {data.challengesList.map((item, i) => (
+                  <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-card border border-border">
+                    <TrendingUp className="w-4 h-4 text-destructive mt-0.5 shrink-0" />
+                    <span className="text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+            {data.challengesOutro && (
+              <p className="text-sm text-muted-foreground leading-relaxed">{data.challengesOutro}</p>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* Services + Form */}
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4">
@@ -111,8 +141,101 @@ const IndustryPageLayout = ({ data }: Props) => {
         </div>
       </section>
 
+      {/* Strategy Section (optional) */}
+      {data.strategy && (
+        <section className="py-20 lg:py-28 bg-secondary">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center mb-12">
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Our Strategy</p>
+              <h2 className="font-heading text-2xl md:text-3xl font-extrabold">{data.strategy.heading}</h2>
+              {data.strategy.description && (
+                <p className="text-sm text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">{data.strategy.description}</p>
+              )}
+            </div>
+            <div className="space-y-10">
+              {data.strategy.subsections.map((sub, i) => (
+                <div key={i} className="bg-card border border-border rounded-xl p-6 md:p-8">
+                  <h3 className="font-heading text-lg font-bold mb-4">{sub.h3}</h3>
+                  {sub.paragraphs.map((p, j) => (
+                    <p key={j} className="text-sm text-muted-foreground leading-relaxed mb-4">{p}</p>
+                  ))}
+                  {sub.bullets && (
+                    <div className="space-y-2">
+                      {sub.bullets.map((b, k) => (
+                        <div key={k} className="flex items-start gap-3">
+                          <CheckCircle className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                          <span className="text-sm">{b}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Video Content Section (optional) */}
+      {data.videoContentHeading && (
+        <section className="py-20 lg:py-28">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <div className="text-center mb-12">
+              <div className="w-12 h-12 rounded-xl bg-primary/8 flex items-center justify-center text-primary mx-auto mb-4">
+                <Video className="w-6 h-6" />
+              </div>
+              <h2 className="font-heading text-2xl md:text-3xl font-extrabold">{data.videoContentHeading}</h2>
+              {data.videoContentIntro && (
+                <p className="text-sm text-muted-foreground mt-4 leading-relaxed">{data.videoContentIntro}</p>
+              )}
+            </div>
+            {data.videoContentList && (
+              <div className="grid sm:grid-cols-2 gap-3">
+                {data.videoContentList.map((item, i) => (
+                  <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                    <span className="text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+            {data.videoContentOutro && (
+              <p className="text-sm text-muted-foreground leading-relaxed mt-8 text-center">{data.videoContentOutro}</p>
+            )}
+          </div>
+        </section>
+      )}
+
+      {/* Benefits Section (optional) */}
+      {data.benefitsHeading && (
+        <section className="py-20 lg:py-28 bg-secondary">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <div className="text-center mb-12">
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Benefits</p>
+              <h2 className="font-heading text-2xl md:text-3xl font-extrabold">{data.benefitsHeading}</h2>
+              {data.benefitsIntro && (
+                <p className="text-sm text-muted-foreground mt-4 leading-relaxed">{data.benefitsIntro}</p>
+              )}
+            </div>
+            {data.benefitsList && (
+              <div className="space-y-3">
+                {data.benefitsList.map((item, i) => (
+                  <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                    <span className="text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+            {data.benefitsOutro && (
+              <p className="text-sm text-muted-foreground leading-relaxed mt-8 text-center">{data.benefitsOutro}</p>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* Trust Points */}
-      <section className="py-20 lg:py-28 bg-secondary">
+      <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Why Cypher Digital</p>
@@ -131,6 +254,33 @@ const IndustryPageLayout = ({ data }: Props) => {
           </div>
         </div>
       </section>
+
+      {/* Why Choose Us Section (optional) */}
+      {data.whyChooseHeading && (
+        <section className="py-20 lg:py-28 bg-secondary">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <div className="text-center mb-12">
+              <div className="w-12 h-12 rounded-xl bg-primary/8 flex items-center justify-center text-primary mx-auto mb-4">
+                <Award className="w-6 h-6" />
+              </div>
+              <h2 className="font-heading text-2xl md:text-3xl font-extrabold">{data.whyChooseHeading}</h2>
+              {data.whyChooseIntro && (
+                <p className="text-sm text-muted-foreground mt-4 leading-relaxed">{data.whyChooseIntro}</p>
+              )}
+            </div>
+            {data.whyChooseList && (
+              <div className="space-y-3">
+                {data.whyChooseList.map((item, i) => (
+                  <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-card border border-border">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                    <span className="text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* FAQs */}
       {data.faqs.length > 0 && (
@@ -155,8 +305,34 @@ const IndustryPageLayout = ({ data }: Props) => {
         </section>
       )}
 
-      {/* Internal Links */}
-      <section className="py-20 lg:py-28 bg-secondary">
+      {/* Industry Cross-Links (optional) */}
+      {data.industryLinksHeading && (
+        <section className="py-20 lg:py-28 bg-secondary">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Industries We Serve</p>
+              <h2 className="font-heading text-2xl md:text-3xl font-extrabold">{data.industryLinksHeading}</h2>
+              {data.industryLinksIntro && (
+                <p className="text-sm text-muted-foreground mt-4 max-w-2xl mx-auto leading-relaxed">{data.industryLinksIntro}</p>
+              )}
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {otherIndustries.map((ind) => (
+                <Link
+                  key={ind.slug}
+                  to={`/${ind.slug}`}
+                  className="bg-card border border-border rounded-xl p-5 hover:border-primary/20 hover:shadow-card transition-all group"
+                >
+                  <h3 className="font-heading text-sm font-bold group-hover:text-primary transition-colors">{ind.h1}</h3>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Internal Service Links */}
+      <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Explore More</p>
@@ -184,10 +360,20 @@ const IndustryPageLayout = ({ data }: Props) => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Get Started</p>
-              <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-white mb-6">Ready to Get Started?</h2>
-              <p className="text-white/50 mb-8 max-w-xl text-sm leading-relaxed">
-                Fill in the form and we'll create a custom marketing strategy for your business. We'll get back to you via WhatsApp.
-              </p>
+              <h2 className="font-heading text-2xl md:text-3xl font-extrabold text-white mb-6">
+                {data.bottomCtaHeading || "Ready to Get Started?"}
+              </h2>
+              {data.bottomCtaText ? (
+                <div className="space-y-4 mb-8">
+                  {data.bottomCtaText.map((text, i) => (
+                    <p key={i} className="text-white/50 max-w-xl text-sm leading-relaxed">{text}</p>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-white/50 mb-8 max-w-xl text-sm leading-relaxed">
+                  Fill in the form and we'll create a custom marketing strategy for your business. We'll get back to you via WhatsApp.
+                </p>
+              )}
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button asChild className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 rounded-xl h-11 px-6">
                   <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation" target="_blank" rel="noopener noreferrer">Book Free Consultation</a>
