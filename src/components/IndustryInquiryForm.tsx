@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { Send } from "lucide-react";
+import { Send, MessageCircle } from "lucide-react";
 import type { IndustryFormField } from "@/data/industries";
 
 interface IndustryInquiryFormProps {
