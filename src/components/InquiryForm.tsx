@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { Send } from "lucide-react";
+import { Send, MessageCircle } from "lucide-react";
 
 interface InquiryFormProps {
   service?: string;
@@ -73,6 +73,10 @@ const InquiryForm = ({ service }: InquiryFormProps) => {
         <Send className="w-4 h-4 mr-2" />
         Send via WhatsApp
       </Button>
+      <p className="flex items-center justify-center gap-1.5 text-xs text-muted-foreground">
+        <MessageCircle className="w-3.5 h-3.5" />
+        via WhatsApp
+      </p>
     </form>
   );
 };
