@@ -5,9 +5,10 @@ import { useEffect } from "react";
 import {
   TrendingUp, Users, Eye, Globe, ShoppingCart, ArrowRight, CheckCircle2,
   Megaphone, BarChart3, Target, Zap, Smartphone, AlertTriangle, DollarSign,
-  Brain, Layers, MousePointerClick, PieChart
+  Brain, Layers, MousePointerClick, PieChart, Clock, MapPin, LineChart
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import heroImg from "@/assets/advertising-hero.jpg";
 import typesImg from "@/assets/advertising-types.jpg";
 import socialImg from "@/assets/advertising-social.jpg";
@@ -53,7 +54,6 @@ const faqs = [
 
 const AdvertisingInSriLanka = () => {
   useEffect(() => {
-    // Article schema
     const articleScript = document.createElement("script");
     articleScript.type = "application/ld+json";
     articleScript.text = JSON.stringify({
@@ -70,7 +70,6 @@ const AdvertisingInSriLanka = () => {
     });
     document.head.appendChild(articleScript);
 
-    // FAQ schema
     const faqScript = document.createElement("script");
     faqScript.type = "application/ld+json";
     faqScript.text = JSON.stringify({
@@ -93,8 +92,8 @@ const AdvertisingInSriLanka = () => {
   return (
     <>
       <SEOHead
-        title="Advertising in Sri Lanka | Complete Digital Advertising Guide 2025"
-        description="Learn about advertising in Sri Lanka. Comprehensive guide to digital advertising strategies, social media ads, search engine advertising, advertising statistics, budget guide, and industry-specific marketing for Sri Lankan businesses."
+        title="Advertising in Sri Lanka | Complete Digital Advertising Guide 2026"
+        description="Learn about advertising in Sri Lanka. Comprehensive guide covering digital audience data, advertising costs, best platforms, targeting strategies, and industry-specific marketing for Sri Lankan businesses."
         canonical="https://cypherdigital.lk/advertising-in-sri-lanka"
       />
 
@@ -106,7 +105,7 @@ const AdvertisingInSriLanka = () => {
         </div>
         <div className="relative container mx-auto px-4 py-24 md:py-36 text-center max-w-4xl">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary text-sm font-medium mb-6">
-            Complete Digital Advertising Guide 2025
+            Complete Digital Advertising Guide 2026
           </span>
           <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-[hsl(var(--hero-foreground))]">
             <a href="https://cypherdigital.lk/" className="text-primary hover:underline">Advertising in Sri Lanka</a>: The Complete Guide to Digital Advertising for Businesses
@@ -135,7 +134,7 @@ const AdvertisingInSriLanka = () => {
           </div>
         </section>
 
-        {/* NEW: Market Overview */}
+        {/* Market Overview */}
         <section className="mb-16">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
@@ -169,7 +168,74 @@ const AdvertisingInSriLanka = () => {
           </div>
         </section>
 
-        {/* NEW: Advertising Statistics */}
+        {/* ===== NEW: Digital Audience in Sri Lanka ===== */}
+        <section className="mb-16">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+              <Users className="w-7 h-7 text-primary" />
+              Digital Audience in Sri Lanka (Key Marketing Data)
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
+              Understanding the digital audience is essential for planning effective advertising campaigns in Sri Lanka.
+            </p>
+
+            <h3 className="font-heading text-xl font-bold mb-4">Internet Usage</h3>
+            <div className="grid sm:grid-cols-3 gap-4 mb-8">
+              {[
+                { stat: "11–12M", label: "Internet Users" },
+                { stat: "50–55%", label: "Internet Penetration" },
+                { stat: "85%+", label: "Mobile Internet Traffic" },
+              ].map(({ stat, label }) => (
+                <div key={label} className="p-5 rounded-xl border border-border bg-background text-center">
+                  <p className="text-2xl md:text-3xl font-extrabold text-primary mb-1">{stat}</p>
+                  <p className="text-sm text-muted-foreground">{label}</p>
+                </div>
+              ))}
+            </div>
+
+            <h3 className="font-heading text-xl font-bold mb-4">Social Media Users</h3>
+            <div className="grid sm:grid-cols-2 gap-4 mb-8">
+              <div className="p-5 rounded-xl border border-border bg-background text-center">
+                <p className="text-2xl font-extrabold text-primary mb-1">8M+</p>
+                <p className="text-sm text-muted-foreground">Total Social Media Users</p>
+              </div>
+              <div className="p-5 rounded-xl border border-border bg-background text-center">
+                <p className="text-2xl font-extrabold text-primary mb-1">2.5–3 hrs</p>
+                <p className="text-sm text-muted-foreground">Average Daily Social Media Time</p>
+              </div>
+            </div>
+
+            <h3 className="font-heading text-xl font-bold mb-4">Most Used Platforms in Sri Lanka</h3>
+            <div className="rounded-xl border border-border overflow-hidden mb-6">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="font-bold">Platform</TableHead>
+                    <TableHead className="font-bold">Estimated Users</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {[
+                    { platform: "Facebook", users: "~7 million" },
+                    { platform: "YouTube", users: "~6+ million" },
+                    { platform: "Instagram", users: "~2+ million" },
+                    { platform: "TikTok", users: "Rapidly growing" },
+                  ].map(({ platform, users }) => (
+                    <TableRow key={platform}>
+                      <TableCell className="font-medium">{platform}</TableCell>
+                      <TableCell>{users}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+            <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
+              <p className="text-sm font-medium text-primary">💡 Insight for marketers: Facebook and YouTube remain the strongest advertising platforms in Sri Lanka.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Advertising Statistics */}
         <section className="mb-16">
           <div className="bg-[hsl(var(--hero-bg))] text-[hsl(var(--hero-foreground))] rounded-2xl p-8 md:p-12">
             <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 text-center">
@@ -195,7 +261,7 @@ const AdvertisingInSriLanka = () => {
           </div>
         </section>
 
-        {/* Types of Advertising - with image (expanded) */}
+        {/* Types of Advertising */}
         <section className="mb-16">
           <div className="grid md:grid-cols-2 gap-10 items-center mb-10">
             <div>
@@ -222,7 +288,6 @@ const AdvertisingInSriLanka = () => {
             </div>
           </div>
 
-          {/* Display Advertising */}
           <div className="grid sm:grid-cols-2 gap-6 mb-8">
             <div className="p-6 rounded-2xl border border-border bg-background">
               <h3 className="font-heading text-lg font-bold mb-3 flex items-center gap-2">
@@ -289,6 +354,274 @@ const AdvertisingInSriLanka = () => {
           </div>
         </section>
 
+        {/* ===== NEW: Best Performing Advertising Channels ===== */}
+        <section className="mb-16">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+            <BarChart3 className="w-7 h-7 text-primary" />
+            Best Performing Advertising Channels in Sri Lanka
+          </h2>
+          <p className="text-muted-foreground leading-relaxed text-lg mb-8">
+            Different industries perform better on different platforms. Here's a breakdown of the best advertising channels for Sri Lankan businesses.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {[
+              {
+                title: "Google Search Ads",
+                icon: Globe,
+                bestFor: ["Education institutes", "Real estate", "Legal services", "Healthcare", "Finance"],
+                reason: "People search when they already want the service."
+              },
+              {
+                title: "Facebook Advertising",
+                icon: Megaphone,
+                bestFor: ["Ecommerce", "Retail businesses", "Restaurants", "Beauty salons", "Local services"],
+                reason: "Strong audience targeting and visual engagement."
+              },
+              {
+                title: "YouTube Advertising",
+                icon: Eye,
+                bestFor: ["Brand awareness campaigns", "Product launches", "Automotive brands", "Tech products"],
+                reason: "Video ads create strong emotional engagement."
+              },
+              {
+                title: "Display Advertising",
+                icon: Layers,
+                bestFor: ["Brand visibility", "Retargeting campaigns", "Large-scale awareness"],
+                reason: "Display ads appear on websites and news platforms."
+              },
+            ].map(({ title, icon: Icon, bestFor, reason }) => (
+              <div key={title} className="p-6 rounded-2xl border border-border bg-background hover:shadow-lg transition-shadow">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="font-heading text-lg font-bold">{title}</h3>
+                </div>
+                <p className="text-sm text-muted-foreground mb-3 font-medium">Best for:</p>
+                <ul className="space-y-1.5 mb-4">
+                  {bestFor.map(item => (
+                    <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-primary flex-shrink-0" /> {item}
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-xs text-primary font-medium italic">💡 {reason}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ===== NEW: Typical Advertising Costs ===== */}
+        <section className="mb-16">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+            <DollarSign className="w-7 h-7 text-primary" />
+            Typical Advertising Costs in Sri Lanka
+          </h2>
+          <p className="text-muted-foreground leading-relaxed text-lg mb-8">
+            Marketing budgets vary widely depending on industry competition. Here are typical cost benchmarks for Sri Lankan businesses.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-6">
+            <div>
+              <h3 className="font-heading text-lg font-bold mb-4">Google Ads CPC (Cost Per Click)</h3>
+              <div className="rounded-xl border border-border overflow-hidden">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="font-bold">Industry</TableHead>
+                      <TableHead className="font-bold">Average CPC</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {[
+                      { industry: "Education", cpc: "LKR 40 – 120" },
+                      { industry: "Real Estate", cpc: "LKR 80 – 200" },
+                      { industry: "Finance", cpc: "LKR 120 – 300" },
+                      { industry: "Ecommerce", cpc: "LKR 30 – 80" },
+                    ].map(({ industry, cpc }) => (
+                      <TableRow key={industry}>
+                        <TableCell className="font-medium">{industry}</TableCell>
+                        <TableCell>{cpc}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-heading text-lg font-bold mb-4">Facebook Advertising CPC</h3>
+              <div className="rounded-xl border border-border overflow-hidden">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="font-bold">Campaign Type</TableHead>
+                      <TableHead className="font-bold">Average CPC</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {[
+                      { type: "Traffic campaigns", cpc: "LKR 10 – 40" },
+                      { type: "Lead generation", cpc: "LKR 20 – 70" },
+                      { type: "Conversion campaigns", cpc: "LKR 30 – 90" },
+                    ].map(({ type, cpc }) => (
+                      <TableRow key={type}>
+                        <TableCell className="font-medium">{type}</TableCell>
+                        <TableCell>{cpc}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+            </div>
+          </div>
+          <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
+            <p className="text-sm font-medium text-primary">💡 Insight: Facebook ads remain the most affordable advertising channel in Sri Lanka.</p>
+          </div>
+        </section>
+
+        {/* ===== NEW: Best Advertising Times ===== */}
+        <section className="mb-16">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+            <Clock className="w-7 h-7 text-primary" />
+            Best Advertising Times in Sri Lanka
+          </h2>
+          <p className="text-muted-foreground leading-relaxed text-lg mb-8">
+            Understanding user behavior helps improve ad performance. Timing your ads correctly can significantly boost engagement and conversions.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="font-heading text-lg font-bold mb-4">Best Days for Ads</h3>
+              <div className="space-y-3">
+                <div className="p-4 rounded-xl border border-border bg-background">
+                  <p className="font-medium text-sm">Monday to Thursday</p>
+                  <p className="text-xs text-muted-foreground">Best for business services & B2B</p>
+                </div>
+                <div className="p-4 rounded-xl border border-border bg-background">
+                  <p className="font-medium text-sm">Friday to Sunday</p>
+                  <p className="text-xs text-muted-foreground">Best for retail & ecommerce</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-heading text-lg font-bold mb-4">Best Hours for Advertising</h3>
+              <div className="rounded-xl border border-border overflow-hidden">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="font-bold">Time</TableHead>
+                      <TableHead className="font-bold">Performance</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {[
+                      { time: "7am – 9am", perf: "Moderate", color: "text-yellow-600" },
+                      { time: "12pm – 2pm", perf: "High", color: "text-primary" },
+                      { time: "7pm – 10pm", perf: "Very High", color: "text-green-600" },
+                    ].map(({ time, perf, color }) => (
+                      <TableRow key={time}>
+                        <TableCell className="font-medium">{time}</TableCell>
+                        <TableCell className={`font-bold ${color}`}>{perf}</TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+              <p className="text-sm text-muted-foreground mt-3">Evening hours often generate higher engagement and conversions.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* ===== NEW: Industries That Spend Most ===== */}
+        <section className="mb-16">
+          <div className="bg-[hsl(var(--hero-bg))] text-[hsl(var(--hero-foreground))] rounded-2xl p-8 md:p-12">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 text-center">
+              Industries That Spend the Most on Advertising in Sri Lanka
+            </h2>
+            <p className="text-[hsl(var(--hero-muted))] text-center mb-8 max-w-2xl mx-auto">
+              Some industries invest heavily in marketing. These sectors drive a large portion of digital ad spending in Sri Lanka.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { rank: "1", label: "Education Institutes" },
+                { rank: "2", label: "Real Estate Companies" },
+                { rank: "3", label: "Automobile Dealers" },
+                { rank: "4", label: "Ecommerce Brands" },
+                { rank: "5", label: "Financial Services" },
+                { rank: "6", label: "Mobile Phone Retailers" },
+                { rank: "7", label: "Tourism Companies" },
+              ].map(({ rank, label }) => (
+                <div key={rank} className="flex items-center gap-3 p-4 rounded-xl bg-[hsl(var(--hero-foreground)/0.05)] border border-[hsl(var(--hero-foreground)/0.1)]">
+                  <span className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm flex-shrink-0">{rank}</span>
+                  <span className="text-sm font-medium">{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ===== NEW: Targeting Strategies ===== */}
+        <section className="mb-16">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+            <MapPin className="w-7 h-7 text-primary" />
+            Advertising Targeting Strategies for Sri Lanka
+          </h2>
+          <p className="text-muted-foreground leading-relaxed text-lg mb-8">
+            Marketers can improve campaign performance using smart targeting. Here are the most effective targeting strategies for Sri Lankan campaigns.
+          </p>
+
+          <div className="grid sm:grid-cols-3 gap-6">
+            <div className="p-6 rounded-2xl border border-border bg-background">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <MapPin className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-heading text-lg font-bold mb-3">Location Targeting</h3>
+              <p className="text-sm text-muted-foreground mb-3">Focus on major cities:</p>
+              <ul className="space-y-1.5">
+                {["Colombo", "Kandy", "Gampaha", "Negombo", "Kurunegala"].map(city => (
+                  <li key={city} className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-primary flex-shrink-0" /> {city}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-primary font-medium mt-3">Urban areas generate higher conversion rates.</p>
+            </div>
+
+            <div className="p-6 rounded-2xl border border-border bg-background">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <Target className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-heading text-lg font-bold mb-3">Interest Targeting</h3>
+              <p className="text-sm text-muted-foreground mb-3">Useful interests for Sri Lankan campaigns:</p>
+              <ul className="space-y-1.5">
+                {["Online shopping", "Education", "Travel", "Automobiles", "Technology"].map(interest => (
+                  <li key={interest} className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-primary flex-shrink-0" /> {interest}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="p-6 rounded-2xl border border-border bg-background">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                <Globe className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="font-heading text-lg font-bold mb-3">Language Targeting</h3>
+              <p className="text-sm text-muted-foreground mb-3">Most successful campaigns target:</p>
+              <ul className="space-y-1.5">
+                {["English", "Sinhala", "Tamil"].map(lang => (
+                  <li key={lang} className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-primary flex-shrink-0" /> {lang}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-primary font-medium mt-3">Localized ads perform much better.</p>
+            </div>
+          </div>
+        </section>
+
         {/* Why Advertising Is Important */}
         <section className="mb-16">
           <div className="grid md:grid-cols-2 gap-10 items-center mb-8">
@@ -321,7 +654,7 @@ const AdvertisingInSriLanka = () => {
           </div>
         </section>
 
-        {/* NEW: Best Advertising Strategies */}
+        {/* Best Advertising Strategies */}
         <section className="mb-16">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Best Advertising Strategies for Sri Lankan Businesses</h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
@@ -344,7 +677,7 @@ const AdvertisingInSriLanka = () => {
           </div>
         </section>
 
-        {/* NEW: Benefits of Digital Advertising */}
+        {/* Benefits of Digital Advertising */}
         <section className="mb-16 bg-secondary rounded-2xl p-8 md:p-12">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Benefits of Digital Advertising in Sri Lanka</h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
@@ -365,23 +698,51 @@ const AdvertisingInSriLanka = () => {
           </div>
         </section>
 
-        {/* NEW: Common Mistakes */}
+        {/* ===== NEW: Advertising Metrics ===== */}
+        <section className="mb-16">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+            <LineChart className="w-7 h-7 text-primary" />
+            Advertising Metrics Marketers Should Track
+          </h2>
+          <p className="text-muted-foreground leading-relaxed text-lg mb-8">
+            Successful marketers focus on performance data. Tracking these metrics helps optimize advertising campaigns and maximize return on investment.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {[
+              { label: "Click Through Rate", abbr: "CTR" },
+              { label: "Cost Per Click", abbr: "CPC" },
+              { label: "Cost Per Lead", abbr: "CPL" },
+              { label: "Conversion Rate", abbr: "CR" },
+              { label: "Return on Ad Spend", abbr: "ROAS" },
+            ].map(({ label, abbr }) => (
+              <div key={abbr} className="p-5 rounded-xl border border-border bg-background text-center hover:shadow-md hover:border-primary/30 transition-all">
+                <p className="text-2xl font-extrabold text-primary mb-1">{abbr}</p>
+                <p className="text-xs text-muted-foreground">{label}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Common Mistakes */}
         <section className="mb-16">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
             <AlertTriangle className="w-7 h-7 text-destructive" />
-            Common Advertising Mistakes Businesses Make
+            Common Advertising Mistakes Businesses Make in Sri Lanka
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Many companies fail to achieve good results due to common advertising mistakes. Avoiding these can significantly improve your advertising results.
+            Many businesses fail because they make common marketing mistakes. Professional campaign management can significantly improve results.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              "Targeting the wrong audience",
-              "Poor ad creatives and copy",
+              "Targeting everyone instead of a niche audience",
+              "Poor ad creative quality",
               "Weak or slow landing pages",
+              "Not testing multiple ads",
+              "Stopping campaigns too early",
               "Lack of performance tracking",
               "Insufficient advertising budget",
               "No clear call to action",
+              "Ignoring mobile optimization",
             ].map(mistake => (
               <div key={mistake} className="flex items-center gap-3 p-4 rounded-xl border border-destructive/20 bg-destructive/5">
                 <AlertTriangle className="w-4 h-4 text-destructive flex-shrink-0" />
@@ -391,7 +752,7 @@ const AdvertisingInSriLanka = () => {
           </div>
         </section>
 
-        {/* NEW: Budget Guide */}
+        {/* Budget Guide */}
         <section className="mb-16">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
             <DollarSign className="w-7 h-7 text-primary" />
@@ -420,6 +781,29 @@ const AdvertisingInSriLanka = () => {
                 <div key={item} className="p-3 rounded-lg bg-secondary text-center text-sm font-medium">{item}</div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* ===== NEW: Advertising Opportunities ===== */}
+        <section className="mb-16 bg-secondary rounded-2xl p-8 md:p-12">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Advertising Opportunities in Sri Lanka</h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            Sri Lanka still has many untapped digital marketing opportunities. Companies that invest early in digital advertising gain a competitive advantage.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              "Local business advertising",
+              "Ecommerce growth",
+              "Tourism marketing",
+              "Education marketing",
+              "Startup brand building",
+              "Influencer partnerships",
+            ].map(opp => (
+              <div key={opp} className="flex items-center gap-3 p-4 rounded-xl bg-background border border-border hover:shadow-md transition-shadow">
+                <Zap className="w-4 h-4 text-primary flex-shrink-0" />
+                <span className="text-sm font-medium">{opp}</span>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -458,16 +842,16 @@ const AdvertisingInSriLanka = () => {
         <section className="mb-16">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
-              <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Digital Advertising Trends in Sri Lanka</h2>
+              <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Advertising Trends in Sri Lanka (2026)</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                The advertising industry continues to evolve as new technologies and platforms emerge. Businesses that adapt to these trends can reach modern consumers more effectively.
+                Marketing trends continue to evolve rapidly. Businesses that adapt to these trends can reach modern consumers more effectively.
               </p>
               <div className="space-y-3">
                 {[
-                  { icon: Smartphone, label: "Short-form video advertising" },
-                  { icon: Users, label: "Influencer marketing campaigns" },
-                  { icon: Zap, label: "AI-driven advertising" },
-                  { icon: Target, label: "Personalized marketing campaigns" },
+                  { icon: Smartphone, label: "Short-form video ads (TikTok, Reels, Shorts)" },
+                  { icon: Brain, label: "AI-powered advertising optimization" },
+                  { icon: Users, label: "Influencer marketing collaborations" },
+                  { icon: Target, label: "Performance marketing with measurable results" },
                   { icon: Smartphone, label: "Mobile-first advertising strategies" },
                 ].map(({ icon: Icon, label }) => (
                   <div key={label} className="flex items-center gap-3 p-3 rounded-lg bg-secondary">
@@ -505,7 +889,7 @@ const AdvertisingInSriLanka = () => {
             ))}
           </div>
           <p className="text-muted-foreground leading-relaxed">
-            Businesses that adopt these innovations early will gain a competitive advantage in reaching customers and building strong brands. Advertising will continue to evolve as platforms introduce new tools that improve targeting, personalization, and campaign performance.
+            Businesses that adopt these innovations early will gain a competitive advantage in reaching customers and building strong brands.
           </p>
         </section>
 
@@ -534,7 +918,7 @@ const AdvertisingInSriLanka = () => {
           </p>
         </section>
 
-        {/* NEW: Why Businesses Choose Cypher Digital */}
+        {/* Why Businesses Choose Cypher Digital */}
         <section className="mb-16 max-w-4xl mx-auto">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Why Businesses Choose Cypher Digital for Advertising in Sri Lanka</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
@@ -556,7 +940,7 @@ const AdvertisingInSriLanka = () => {
           </div>
         </section>
 
-        {/* NEW: FAQ Section with Schema */}
+        {/* FAQ Section */}
         <section className="mb-16">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Frequently Asked Questions About Advertising in Sri Lanka</h2>
           <Accordion type="single" collapsible className="w-full">
@@ -571,7 +955,7 @@ const AdvertisingInSriLanka = () => {
           </Accordion>
         </section>
 
-        {/* NEW: Related Advertising Topics (Topical Relevance) */}
+        {/* Related Advertising Topics */}
         <section className="mb-16">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Related Advertising Topics</h2>
           <div className="flex flex-wrap gap-3">
