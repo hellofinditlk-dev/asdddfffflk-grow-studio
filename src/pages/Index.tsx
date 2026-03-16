@@ -185,6 +185,11 @@ const Index = () => (
           <p className="text-muted-foreground text-sm">
             Perfect for SMEs, salons, education institutes, real estate, healthcare, and service businesses in Sri Lanka.
           </p>
+          <p className="text-muted-foreground text-sm mt-3">
+            Explore our comprehensive guide on{" "}
+            <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>
+            {" "}for market data, costs, and strategies.
+          </p>
         </div>
       </div>
     </section>

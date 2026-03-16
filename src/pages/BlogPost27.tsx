@@ -59,6 +59,7 @@ const BlogPost27 = () => (
             <h2 className="font-heading text-lg font-bold text-foreground">Grow Your Business with Cypher Digital</h2>
             <p>Every industry requires a customized digital marketing strategy to reach the right audience and generate measurable results. Cypher Digital provides industry-focused digital marketing solutions designed to help businesses grow online.</p>
             <p>If you want to improve your online visibility, attract more customers, and increase revenue, our team can create a strategy tailored to your industry.</p>
+            <p>For detailed insights on{" "}<Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>{" "}including market data, platform comparisons, and budget strategies, explore our complete guide.</p>
             <p>As one of the{" "}<Link to="/" className="text-primary font-semibold hover:underline">best digital marketing agencies in Sri Lanka</Link>, Cypher Digital offers expert solutions tailored to grow your business online.</p>
           </div>
           <div className="mt-14 pt-10 border-t border-border">
