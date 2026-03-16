@@ -273,6 +273,17 @@ const ServicePageLayout = ({
         </section>
       )}
 
+      {/* Advertising Guide Link */}
+      <section className="py-12 bg-secondary/50">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            Looking for comprehensive data on{" "}
+            <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>?
+            {" "}Our complete guide covers market statistics, advertising costs, best platforms, targeting strategies, and industry-specific insights for Sri Lankan businesses.
+          </p>
+        </div>
+      </section>
+
       {/* Related Services - Internal Linking */}
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-4">
