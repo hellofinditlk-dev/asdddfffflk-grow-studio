@@ -42,6 +42,7 @@ import BlogPost24 from "./pages/BlogPost24";
 import BlogPost25 from "./pages/BlogPost25";
 import BlogPost26 from "./pages/BlogPost26";
 import BlogPost27 from "./pages/BlogPost27";
+import AdvertisingInSriLanka from "./pages/AdvertisingInSriLanka";
 import IndustryPage from "./pages/IndustryPage";
 import NotFound from "./pages/NotFound";
 
@@ -92,6 +93,7 @@ const App = () => (
             <Route path="/blog/on-page-seo-guide-better-rankings" element={<BlogPost26 />} />
             <Route path="/blog/why-industry-specific-digital-marketing-important-businesses-sri-lanka" element={<BlogPost27 />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/advertising-in-sri-lanka" element={<AdvertisingInSriLanka />} />
             {/* Industry pages */}
             <Route path="/:slug" element={<IndustryPage />} />
             <Route path="*" element={<NotFound />} />
