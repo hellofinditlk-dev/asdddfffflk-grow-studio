@@ -358,9 +358,6 @@ const Index = () => (
             { icon: <Megaphone className="w-5 h-5" />, title: "Social Media Advertising", desc: "Facebook, Instagram, and TikTok campaigns for brand awareness and lead generation.", link: "/facebook-ads-sri-lanka" },
             { icon: <Search className="w-5 h-5" />, title: "Search Engine Advertising", desc: "Google Search and Display Ads to capture high-intent customers.", link: "/google-ads-sri-lanka" },
             { icon: <Users className="w-5 h-5" />, title: "Influencer Marketing", desc: "Collaborate with local influencers to reach niche audiences authentically.", link: "" },
-            { icon: <Monitor className="w-5 h-5" />, title: "Display & Banner Advertising", desc: "Visual ads on websites and news platforms for brand visibility.", link: "" },
-            { icon: <Tv className="w-5 h-5" />, title: "Television Advertising", desc: "Reach mass audiences through TV commercials and sponsorships.", link: "" },
-            { icon: <Layers className="w-5 h-5" />, title: "Outdoor Billboard Advertising", desc: "High-visibility outdoor placements in key urban locations.", link: "" },
           ].map((item, i) => (
             <div key={i} className="bg-card border border-border rounded-xl p-6 hover:border-primary/20 hover:shadow-card-hover transition-all">
               <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center text-primary mb-4">
