@@ -71,154 +71,6 @@ const process = [
   { step: "05", title: "Reporting", desc: "Transparent monthly reports with actionable insights." },
 ];
 
-    {/* DIGITAL ADVERTISING IN SRI LANKA */}
-    <section className="py-20 lg:py-28">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Digital Advertising</p>
-          <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-6">
-            Advertising and Digital Marketing in Sri Lanka
-          </h2>
-          <p className="text-muted-foreground leading-relaxed">
-            Sri Lanka's advertising industry has evolved rapidly with the growth of digital platforms and social media. Businesses today rely on a mix of traditional advertising and digital marketing strategies to reach their audiences effectively — from social media campaigns to search engine marketing and influencer collaborations.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6 mb-16">
-          <div className="bg-card border border-border rounded-2xl p-7 md:p-8">
-            <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center text-primary mb-5">
-              <Globe className="w-5 h-5" />
-            </div>
-            <h3 className="font-heading text-lg font-bold mb-3">Digital Advertising Landscape</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-              The digital advertising landscape in Sri Lanka is driven by the increasing number of internet users and social media adoption. Platforms such as Facebook, Instagram, YouTube, and TikTok have become powerful marketing tools for brands targeting Sri Lankan consumers.
-            </p>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Cypher Digital provides a comprehensive overview of{" "}
-              <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>
-              , helping businesses understand how different advertising platforms perform in the local market.
-            </p>
-          </div>
-
-          <div className="bg-card border border-border rounded-2xl p-7 md:p-8">
-            <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center text-primary mb-5">
-              <Users className="w-5 h-5" />
-            </div>
-            <h3 className="font-heading text-lg font-bold mb-3">Social Media Advertising in Sri Lanka</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-              Social media advertising has become one of the most effective ways for businesses in Sri Lanka to connect with customers. Millions of Sri Lankans actively use social platforms every day, making them valuable channels for targeted marketing campaigns.
-            </p>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Advertisers reach potential customers through sponsored posts, video ads, influencer collaborations, and remarketing campaigns with advanced targeting based on location, interests, age groups, and purchasing behavior.
-            </p>
-          </div>
-        </div>
-
-        {/* WHY DIGITAL ADVERTISING */}
-        <div className="bg-secondary rounded-2xl p-8 md:p-12 mb-16">
-          <div className="max-w-2xl mx-auto text-center mb-10">
-            <h3 className="font-heading text-2xl font-extrabold mb-3">Why Businesses Use Digital Advertising in Sri Lanka</h3>
-            <p className="text-muted-foreground text-sm">
-              Companies that combine search engine marketing, social media advertising, and influencer marketing achieve stronger brand recognition and higher conversion rates.
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto">
-            {[
-              { icon: <Target className="w-4 h-4" />, text: "Target specific audiences by demographics and interests" },
-              { icon: <BarChart3 className="w-4 h-4" />, text: "Real-time campaign performance tracking and analytics" },
-              { icon: <TrendingUp className="w-4 h-4" />, text: "Cost-effective marketing compared to traditional media" },
-              { icon: <Eye className="w-4 h-4" />, text: "Increased brand visibility across multiple platforms" },
-              { icon: <MousePointerClick className="w-4 h-4" />, text: "Better engagement with online audiences" },
-              { icon: <Rocket className="w-4 h-4" />, text: "Measurable results and detailed campaign analytics" },
-            ].map((item, i) => (
-              <div key={i} className="flex items-start gap-3 bg-card rounded-xl p-4 border border-border">
-                <div className="w-8 h-8 rounded-lg bg-primary/8 flex items-center justify-center text-primary shrink-0 mt-0.5">
-                  {item.icon}
-                </div>
-                <span className="text-sm text-muted-foreground leading-relaxed">{item.text}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* ADVERTISING PLATFORMS */}
-        <div className="max-w-3xl mx-auto text-center mb-10">
-          <h3 className="font-heading text-2xl font-extrabold mb-3">Advertising Platforms Available in Sri Lanka</h3>
-          <p className="text-muted-foreground text-sm">
-            Businesses can promote their brands through a variety of advertising channels, each offering unique advantages depending on marketing objectives and target audience.
-          </p>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
-          {[
-            { icon: <Megaphone className="w-5 h-5" />, title: "Social Media Advertising", desc: "Facebook, Instagram, and TikTok campaigns for brand awareness and lead generation.", link: "/facebook-ads-sri-lanka" },
-            { icon: <Search className="w-5 h-5" />, title: "Search Engine Advertising", desc: "Google Search and Display Ads to capture high-intent customers.", link: "/google-ads-sri-lanka" },
-            { icon: <Users className="w-5 h-5" />, title: "Influencer Marketing", desc: "Collaborate with local influencers to reach niche audiences authentically.", link: "" },
-            { icon: <Monitor className="w-5 h-5" />, title: "Display & Banner Advertising", desc: "Visual ads on websites and news platforms for brand visibility.", link: "" },
-            { icon: <Tv className="w-5 h-5" />, title: "Television Advertising", desc: "Reach mass audiences through TV commercials and sponsorships.", link: "" },
-            { icon: <Layers className="w-5 h-5" />, title: "Outdoor Billboard Advertising", desc: "High-visibility outdoor placements in key urban locations.", link: "" },
-          ].map((item, i) => (
-            <div key={i} className="bg-card border border-border rounded-xl p-6 hover:border-primary/20 hover:shadow-card-hover transition-all">
-              <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center text-primary mb-4">
-                {item.icon}
-              </div>
-              <h4 className="font-heading text-sm font-bold mb-2">{item.title}</h4>
-              <p className="text-xs text-muted-foreground leading-relaxed mb-3">{item.desc}</p>
-              {item.link && (
-                <Link to={item.link} className="text-xs text-primary font-semibold hover:underline inline-flex items-center gap-1">
-                  Learn more <ArrowRight className="w-3 h-3" />
-                </Link>
-              )}
-            </div>
-          ))}
-        </div>
-
-        {/* INDUSTRIES */}
-        <div className="bg-foreground text-white rounded-2xl p-8 md:p-12 mb-16">
-          <div className="max-w-2xl mx-auto text-center mb-10">
-            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Industries</p>
-            <h3 className="font-heading text-2xl font-extrabold mb-3">Top Advertising Industries in Sri Lanka</h3>
-            <p className="text-white/50 text-sm">
-              Many companies in Sri Lanka now allocate a significant portion of their marketing budget to digital and social media advertising, as it provides measurable results compared to traditional channels.
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {[
-              { icon: <GraduationCap className="w-4 h-4" />, label: "Education Institutes" },
-              { icon: <Building2 className="w-4 h-4" />, label: "Real Estate Companies" },
-              { icon: <ShoppingBag className="w-4 h-4" />, label: "Ecommerce Brands" },
-              { icon: <TrendingUp className="w-4 h-4" />, label: "Financial Services" },
-              { icon: <MapPin className="w-4 h-4" />, label: "Tourism Companies" },
-              { icon: <Phone className="w-4 h-4" />, label: "Mobile Retailers" },
-              { icon: <Palette className="w-4 h-4" />, label: "Beauty & Salons" },
-              { icon: <Lightbulb className="w-4 h-4" />, label: "Startup Brands" },
-            ].map((item, i) => (
-              <div key={i} className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
-                <span className="text-primary">{item.icon}</span>
-                <span className="text-sm font-medium text-white/80">{item.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* ADVERTISING INSIGHTS CTA */}
-        <div className="max-w-3xl mx-auto text-center">
-          <h3 className="font-heading text-xl font-extrabold mb-4">Advertising Insights and Market Data</h3>
-          <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-            Cypher Digital provides insights into the Sri Lankan advertising industry, including digital marketing trends, platform usage statistics, and audience behavior. Access to these insights helps businesses make informed marketing decisions and develop effective advertising strategies.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            <Link to="/advertising-in-sri-lanka" className="inline-flex items-center gap-2 bg-primary text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-primary/90 transition-colors">
-              Advertising in Sri Lanka Guide <ArrowRight className="w-4 h-4" />
-            </Link>
-            <Link to="/blog" className="inline-flex items-center gap-2 bg-secondary text-foreground text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-secondary/80 transition-colors">
-              Read Our Blog <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
 const stats = [
   { value: "15,000+", label: "Leads Generated" },
   { value: "20+", label: "Happy Clients" },
@@ -273,6 +125,7 @@ const Index = () => (
     />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+
     {/* HERO */}
     <section className="relative py-24 lg:py-32 bg-foreground overflow-hidden">
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, hsl(0 0% 100%) 1px, transparent 0)', backgroundSize: '32px 32px' }} />
@@ -423,6 +276,152 @@ const Index = () => (
       </div>
     </section>
 
+    {/* DIGITAL ADVERTISING IN SRI LANKA */}
+    <section className="py-20 lg:py-28 bg-secondary">
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Digital Advertising</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-6">
+            Advertising and Digital Marketing in Sri Lanka
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Sri Lanka's advertising industry has evolved rapidly with the growth of digital platforms and social media. Businesses today rely on a mix of traditional advertising and digital marketing strategies to reach their audiences effectively — from social media campaigns to search engine marketing and influencer collaborations.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-16">
+          <div className="bg-card border border-border rounded-2xl p-7 md:p-8">
+            <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center text-primary mb-5">
+              <Globe className="w-5 h-5" />
+            </div>
+            <h3 className="font-heading text-lg font-bold mb-3">Digital Advertising Landscape</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+              The digital advertising landscape in Sri Lanka is driven by the increasing number of internet users and social media adoption. Platforms such as Facebook, Instagram, YouTube, and TikTok have become powerful marketing tools for brands targeting Sri Lankan consumers.
+            </p>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Cypher Digital provides a comprehensive overview of{" "}
+              <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>
+              , helping businesses understand how different advertising platforms perform in the local market.
+            </p>
+          </div>
+
+          <div className="bg-card border border-border rounded-2xl p-7 md:p-8">
+            <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center text-primary mb-5">
+              <Users className="w-5 h-5" />
+            </div>
+            <h3 className="font-heading text-lg font-bold mb-3">Social Media Advertising in Sri Lanka</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+              Social media advertising has become one of the most effective ways for businesses in Sri Lanka to connect with customers. Millions of Sri Lankans actively use social platforms every day, making them valuable channels for targeted marketing campaigns.
+            </p>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Advertisers reach potential customers through sponsored posts, video ads, influencer collaborations, and remarketing campaigns with advanced targeting based on location, interests, age groups, and purchasing behavior.
+            </p>
+          </div>
+        </div>
+
+        {/* WHY DIGITAL ADVERTISING */}
+        <div className="bg-card border border-border rounded-2xl p-8 md:p-12 mb-16">
+          <div className="max-w-2xl mx-auto text-center mb-10">
+            <h3 className="font-heading text-2xl font-extrabold mb-3">Why Businesses Use Digital Advertising in Sri Lanka</h3>
+            <p className="text-muted-foreground text-sm">
+              Companies that combine search engine marketing, social media advertising, and influencer marketing achieve stronger brand recognition and higher conversion rates.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto">
+            {[
+              { icon: <Target className="w-4 h-4" />, text: "Target specific audiences by demographics and interests" },
+              { icon: <BarChart3 className="w-4 h-4" />, text: "Real-time campaign performance tracking and analytics" },
+              { icon: <TrendingUp className="w-4 h-4" />, text: "Cost-effective marketing compared to traditional media" },
+              { icon: <Eye className="w-4 h-4" />, text: "Increased brand visibility across multiple platforms" },
+              { icon: <MousePointerClick className="w-4 h-4" />, text: "Better engagement with online audiences" },
+              { icon: <Rocket className="w-4 h-4" />, text: "Measurable results and detailed campaign analytics" },
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-3 bg-secondary rounded-xl p-4">
+                <div className="w-8 h-8 rounded-lg bg-primary/8 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                  {item.icon}
+                </div>
+                <span className="text-sm text-muted-foreground leading-relaxed">{item.text}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ADVERTISING PLATFORMS */}
+        <div className="max-w-3xl mx-auto text-center mb-10">
+          <h3 className="font-heading text-2xl font-extrabold mb-3">Advertising Platforms Available in Sri Lanka</h3>
+          <p className="text-muted-foreground text-sm">
+            Businesses can promote their brands through a variety of advertising channels, each offering unique advantages depending on marketing objectives and target audience.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
+          {[
+            { icon: <Megaphone className="w-5 h-5" />, title: "Social Media Advertising", desc: "Facebook, Instagram, and TikTok campaigns for brand awareness and lead generation.", link: "/facebook-ads-sri-lanka" },
+            { icon: <Search className="w-5 h-5" />, title: "Search Engine Advertising", desc: "Google Search and Display Ads to capture high-intent customers.", link: "/google-ads-sri-lanka" },
+            { icon: <Users className="w-5 h-5" />, title: "Influencer Marketing", desc: "Collaborate with local influencers to reach niche audiences authentically.", link: "" },
+            { icon: <Monitor className="w-5 h-5" />, title: "Display & Banner Advertising", desc: "Visual ads on websites and news platforms for brand visibility.", link: "" },
+            { icon: <Tv className="w-5 h-5" />, title: "Television Advertising", desc: "Reach mass audiences through TV commercials and sponsorships.", link: "" },
+            { icon: <Layers className="w-5 h-5" />, title: "Outdoor Billboard Advertising", desc: "High-visibility outdoor placements in key urban locations.", link: "" },
+          ].map((item, i) => (
+            <div key={i} className="bg-card border border-border rounded-xl p-6 hover:border-primary/20 hover:shadow-card-hover transition-all">
+              <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center text-primary mb-4">
+                {item.icon}
+              </div>
+              <h4 className="font-heading text-sm font-bold mb-2">{item.title}</h4>
+              <p className="text-xs text-muted-foreground leading-relaxed mb-3">{item.desc}</p>
+              {item.link && (
+                <Link to={item.link} className="text-xs text-primary font-semibold hover:underline inline-flex items-center gap-1">
+                  Learn more <ArrowRight className="w-3 h-3" />
+                </Link>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* INDUSTRIES */}
+        <div className="bg-foreground text-white rounded-2xl p-8 md:p-12 mb-16">
+          <div className="max-w-2xl mx-auto text-center mb-10">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">Industries</p>
+            <h3 className="font-heading text-2xl font-extrabold mb-3">Top Advertising Industries in Sri Lanka</h3>
+            <p className="text-white/50 text-sm">
+              Many companies in Sri Lanka now allocate a significant portion of their marketing budget to digital and social media advertising, as it provides measurable results compared to traditional channels.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {[
+              { icon: <GraduationCap className="w-4 h-4" />, label: "Education Institutes" },
+              { icon: <Building2 className="w-4 h-4" />, label: "Real Estate Companies" },
+              { icon: <ShoppingBag className="w-4 h-4" />, label: "Ecommerce Brands" },
+              { icon: <TrendingUp className="w-4 h-4" />, label: "Financial Services" },
+              { icon: <MapPin className="w-4 h-4" />, label: "Tourism Companies" },
+              { icon: <Phone className="w-4 h-4" />, label: "Mobile Retailers" },
+              { icon: <Palette className="w-4 h-4" />, label: "Beauty & Salons" },
+              { icon: <Lightbulb className="w-4 h-4" />, label: "Startup Brands" },
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+                <span className="text-primary">{item.icon}</span>
+                <span className="text-sm font-medium text-white/80">{item.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ADVERTISING INSIGHTS CTA */}
+        <div className="max-w-3xl mx-auto text-center">
+          <h3 className="font-heading text-xl font-extrabold mb-4">Advertising Insights and Market Data</h3>
+          <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+            Cypher Digital provides insights into the Sri Lankan advertising industry, including digital marketing trends, platform usage statistics, and audience behavior. Access to these insights helps businesses make informed marketing decisions and develop effective advertising strategies.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link to="/advertising-in-sri-lanka" className="inline-flex items-center gap-2 bg-primary text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-primary/90 transition-colors">
+              Advertising in Sri Lanka Guide <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link to="/blog" className="inline-flex items-center gap-2 bg-card border border-border text-foreground text-sm font-semibold px-5 py-2.5 rounded-xl hover:border-primary/20 transition-colors">
+              Read Our Blog <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
 
     {/* FINAL CTA + FORM */}
     <section className="py-20 lg:py-28 bg-foreground text-white">
