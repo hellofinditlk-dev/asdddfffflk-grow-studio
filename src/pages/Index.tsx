@@ -8,6 +8,10 @@ import {
 } from "lucide-react";
 import InquiryForm from "@/components/InquiryForm";
 import SEOHead from "@/components/SEOHead";
+import mascotDefault from "@/assets/mascot-default.jpeg";
+import mascotSocial from "@/assets/mascot-social.jpeg";
+import mascotGlasses from "@/assets/mascot-glasses.jpeg";
+import mascotHeadset from "@/assets/mascot-headset.jpeg";
 
 const services = [
   {
@@ -140,30 +144,38 @@ const Index = () => (
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, hsl(0 0% 100%) 1px, transparent 0)', backgroundSize: '32px 32px' }} />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-medium mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <Sparkles className="w-3.5 h-3.5" />
-            Digital Marketing Agency Sri Lanka
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-medium mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+              <Sparkles className="w-3.5 h-3.5" />
+              Digital Marketing Agency Sri Lanka
+            </div>
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-white leading-[1.1] mb-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+              Social Media & Digital Marketing{" "}
+              <span className="bg-gradient-to-r from-primary to-[hsl(280,80%,65%)] bg-clip-text text-transparent">Solutions</span>
+              {" "}in Sri Lanka
+            </h1>
+            <p className="text-lg text-white/60 leading-relaxed mb-10 max-w-xl animate-fade-up" style={{ animationDelay: "0.3s" }}>
+              We help Sri Lankan businesses grow with professional social media management, Facebook advertising, Google Ads, and video production.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 animate-fade-up" style={{ animationDelay: "0.4s" }}>
+              <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-all text-sm px-7 h-12 rounded-xl shadow-[0_0_24px_hsl(252_65%_55%/0.3)] hover:shadow-[0_0_32px_hsl(252_65%_55%/0.5)]">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation" target="_blank" rel="noopener noreferrer">
+                  Book a Free Consultation <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
+              </Button>
+              <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm px-7 h-12 rounded-xl font-semibold border-none shadow-[0_0_24px_hsl(25_95%_53%/0.3)] hover:shadow-[0_0_32px_hsl(25_95%_53%/0.5)] transition-all">
+                <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20get%20a%20free%20quote" target="_blank" rel="noopener noreferrer">
+                  Get a Free Quote <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
+              </Button>
+            </div>
           </div>
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-white leading-[1.1] mb-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Social Media & Digital Marketing{" "}
-            <span className="bg-gradient-to-r from-primary to-[hsl(280,80%,65%)] bg-clip-text text-transparent">Solutions</span>
-            {" "}in Sri Lanka
-          </h1>
-          <p className="text-lg text-white/60 leading-relaxed mb-10 max-w-xl animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            We help Sri Lankan businesses grow with professional social media management, Facebook advertising, Google Ads, and video production.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-            <Button asChild size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-all text-sm px-7 h-12 rounded-xl shadow-[0_0_24px_hsl(252_65%_55%/0.3)] hover:shadow-[0_0_32px_hsl(252_65%_55%/0.5)]">
-              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20book%20a%20free%20consultation" target="_blank" rel="noopener noreferrer">
-                Book a Free Consultation <ArrowRight className="w-4 h-4 ml-2" />
-              </a>
-            </Button>
-            <Button asChild size="lg" className="bg-[hsl(25,95%,53%)] !text-white hover:bg-[hsl(25,95%,45%)] text-sm px-7 h-12 rounded-xl font-semibold border-none shadow-[0_0_24px_hsl(25_95%_53%/0.3)] hover:shadow-[0_0_32px_hsl(25_95%_53%/0.5)] transition-all">
-              <a href="https://wa.me/94701772626?text=Hi%2C%20I%20want%20to%20get%20a%20free%20quote" target="_blank" rel="noopener noreferrer">
-                Get a Free Quote <ArrowRight className="w-4 h-4 ml-2" />
-              </a>
-            </Button>
+          <div className="hidden lg:flex justify-center animate-fade-up" style={{ animationDelay: "0.5s" }}>
+            <div className="relative">
+              <div className="absolute inset-0 bg-primary/20 rounded-full blur-[60px] animate-pulse-glow" />
+              <img src={mascotDefault} alt="Cypher Digital mascot" className="relative w-72 h-72 rounded-3xl object-cover shadow-[0_0_40px_hsl(252_65%_55%/0.3)] animate-float" />
+            </div>
           </div>
         </div>
       </div>
@@ -193,22 +205,29 @@ const Index = () => (
     {/* ABOUT */}
     <section className="py-20 lg:py-28">
       <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">About Us</p>
-          <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-6">
-            Results-Driven Digital Marketing Agency
-          </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-            Our digital marketing solutions are built to help businesses increase brand awareness, generate quality leads, and scale faster.
-          </p>
-          <p className="text-muted-foreground text-sm">
-            Perfect for SMEs, salons, education institutes, real estate, healthcare, and service businesses in Sri Lanka.
-          </p>
-          <p className="text-muted-foreground text-sm mt-3">
-            Explore our comprehensive guide on{" "}
-            <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>
-            {" "}for market data, costs, and strategies.
-          </p>
+        <div className="grid lg:grid-cols-[1fr_auto_1fr] gap-10 items-center max-w-4xl mx-auto">
+          <div className="text-center lg:text-right">
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">About Us</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold mb-6">
+              Results-Driven Digital Marketing Agency
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+              Our digital marketing solutions are built to help businesses increase brand awareness, generate quality leads, and scale faster.
+            </p>
+          </div>
+          <div className="hidden lg:block">
+            <img src={mascotGlasses} alt="Cypher Digital mascot with glasses" className="w-48 h-48 rounded-2xl object-cover shadow-card-hover" />
+          </div>
+          <div className="text-center lg:text-left">
+            <p className="text-muted-foreground text-sm">
+              Perfect for SMEs, salons, education institutes, real estate, healthcare, and service businesses in Sri Lanka.
+            </p>
+            <p className="text-muted-foreground text-sm mt-3">
+              Explore our comprehensive guide on{" "}
+              <Link to="/advertising-in-sri-lanka" className="text-primary font-semibold hover:underline">advertising in Sri Lanka</Link>
+              {" "}for market data, costs, and strategies.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -333,16 +352,18 @@ const Index = () => (
           </div>
 
           <div className="bg-card border border-border rounded-2xl p-7 md:p-8 hover:shadow-card-hover transition-shadow duration-300">
-            <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center text-primary mb-5">
-              <Users className="w-5 h-5" />
+            <div className="flex items-start gap-5">
+              <img src={mascotSocial} alt="Cypher Digital social media mascot" className="w-20 h-20 rounded-xl object-cover shrink-0 hidden md:block" />
+              <div>
+                <h3 className="font-heading text-lg font-bold mb-3">Social Media Advertising in Sri Lanka</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Social media advertising has become one of the most effective ways for businesses in Sri Lanka to connect with customers. Millions of Sri Lankans actively use social platforms every day, making them valuable channels for targeted marketing campaigns.
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Advertisers reach potential customers through sponsored posts, video ads, influencer collaborations, and remarketing campaigns with advanced targeting based on location, interests, age groups, and purchasing behavior.
+                </p>
+              </div>
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3">Social Media Advertising in Sri Lanka</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-              Social media advertising has become one of the most effective ways for businesses in Sri Lanka to connect with customers. Millions of Sri Lankans actively use social platforms every day, making them valuable channels for targeted marketing campaigns.
-            </p>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Advertisers reach potential customers through sponsored posts, video ads, influencer collaborations, and remarketing campaigns with advanced targeting based on location, interests, age groups, and purchasing behavior.
-            </p>
           </div>
         </div>
 
@@ -463,11 +484,14 @@ const Index = () => (
             <p className="text-white/50 text-lg leading-relaxed mb-8">
               Generate consistent leads with Facebook ads, Google Ads, and professional social media management in Sri Lanka.
             </p>
-            <div className="flex items-center gap-3 text-white/70">
-              <Phone className="w-4 h-4" />
-              <a href="tel:+94701772626" className="font-heading font-semibold hover:text-primary transition-colors">
-                +94 70 177 2626
-              </a>
+            <div className="flex items-center gap-5 mb-6">
+              <img src={mascotHeadset} alt="Cypher Digital support mascot" className="w-16 h-16 rounded-xl object-cover hidden sm:block" />
+              <div className="flex items-center gap-3 text-white/70">
+                <Phone className="w-4 h-4" />
+                <a href="tel:+94701772626" className="font-heading font-semibold hover:text-primary transition-colors">
+                  +94 70 177 2626
+                </a>
+              </div>
             </div>
           </div>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-7 md:p-8 backdrop-blur-sm">
