@@ -4,6 +4,7 @@ import InquiryForm from "@/components/InquiryForm";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
+import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 
 interface ServicePageLayoutProps {
   title: string;
