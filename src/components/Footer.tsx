@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
+import mascotDefault from "@/assets/mascot-default.jpeg";
 
 const Footer = () => (
   <footer className="border-t border-border bg-secondary" role="contentinfo">
     <div className="container mx-auto px-4 py-16">
       <div className="grid md:grid-cols-4 gap-10">
         <div>
-          <img src={logo} alt="Cypher Digital" className="h-8 w-auto mb-3" />
+          <div className="flex items-center gap-3 mb-3">
+            <img src={logo} alt="Cypher Digital" className="h-8 w-auto" />
+            <img src={mascotDefault} alt="Cypher Digital mascot" className="w-8 h-8 rounded-lg object-cover" />
+          </div>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Results-driven digital marketing agency in Sri Lanka helping businesses grow.
           </p>
