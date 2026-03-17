@@ -352,16 +352,18 @@ const Index = () => (
           </div>
 
           <div className="bg-card border border-border rounded-2xl p-7 md:p-8 hover:shadow-card-hover transition-shadow duration-300">
-            <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center text-primary mb-5">
-              <Users className="w-5 h-5" />
+            <div className="flex items-start gap-5">
+              <img src={mascotSocial} alt="Cypher Digital social media mascot" className="w-20 h-20 rounded-xl object-cover shrink-0 hidden md:block" />
+              <div>
+                <h3 className="font-heading text-lg font-bold mb-3">Social Media Advertising in Sri Lanka</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Social media advertising has become one of the most effective ways for businesses in Sri Lanka to connect with customers. Millions of Sri Lankans actively use social platforms every day, making them valuable channels for targeted marketing campaigns.
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Advertisers reach potential customers through sponsored posts, video ads, influencer collaborations, and remarketing campaigns with advanced targeting based on location, interests, age groups, and purchasing behavior.
+                </p>
+              </div>
             </div>
-            <h3 className="font-heading text-lg font-bold mb-3">Social Media Advertising in Sri Lanka</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-              Social media advertising has become one of the most effective ways for businesses in Sri Lanka to connect with customers. Millions of Sri Lankans actively use social platforms every day, making them valuable channels for targeted marketing campaigns.
-            </p>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Advertisers reach potential customers through sponsored posts, video ads, influencer collaborations, and remarketing campaigns with advanced targeting based on location, interests, age groups, and purchasing behavior.
-            </p>
           </div>
         </div>
 
