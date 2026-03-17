@@ -1,6 +1,7 @@
 import InquiryForm from "@/components/InquiryForm";
 import { Mail, MapPin, Phone, Clock } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import mascotHeadset from "@/assets/mascot-headset.jpeg";
 
 const contactInfo = [
   { icon: <Phone className="w-5 h-5" />, label: "Phone", value: "+94 70 177 2626", href: "tel:+94701772626" },
@@ -71,8 +72,13 @@ const Contact = () => (
             </div>
 
             <div className="mt-10 p-6 rounded-2xl bg-card border border-border shadow-card">
-              <h3 className="font-heading font-semibold mb-2">Prefer WhatsApp?</h3>
-              <p className="text-sm text-muted-foreground mb-4">Chat with us directly for a quick response.</p>
+              <div className="flex items-center gap-4 mb-4">
+                <img src={mascotHeadset} alt="Cypher Digital support mascot" className="w-14 h-14 rounded-xl object-cover" />
+                <div>
+                  <h3 className="font-heading font-semibold">Prefer WhatsApp?</h3>
+                  <p className="text-sm text-muted-foreground">Chat with us directly for a quick response.</p>
+                </div>
+              </div>
               <a
                 href="https://wa.me/94701772626"
                 target="_blank"
