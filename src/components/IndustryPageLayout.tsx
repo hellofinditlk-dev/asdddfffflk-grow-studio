@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import IndustryInquiryForm from "@/components/IndustryInquiryForm";
 import type { IndustryData } from "@/data/industries";
 import { industries } from "@/data/industries";
+import mascotSocial from "@/assets/mascot-social.jpeg";
 
 const allServices = [
   { name: "Social Media Management", path: "/social-media-management-sri-lanka", keyword: "Social Media Management Sri Lanka" },
