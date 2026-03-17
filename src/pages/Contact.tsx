@@ -1,6 +1,7 @@
 import InquiryForm from "@/components/InquiryForm";
 import { Mail, MapPin, Phone, Clock } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import mascotHeadset from "@/assets/mascot-headset.jpeg";
 
 const contactInfo = [
   { icon: <Phone className="w-5 h-5" />, label: "Phone", value: "+94 70 177 2626", href: "tel:+94701772626" },
