@@ -3,7 +3,7 @@ import { Megaphone } from "lucide-react";
 
 const SocialMediaManagement = () => (
   <ServicePageLayout
-    metaTitle="Social Media Management Sri Lanka | From LKR 60,000/mo"
+    metaTitle="Social Media Marketing Sri Lanka | From LKR 60,000/mo"
     metaDescription="Professional Facebook & Instagram page management in Sri Lanka. Content creation, scheduling, inbox management & monthly reports. Packages from LKR 60,000/month."
     canonical="https://cypherdigital.lk/social-media-management-sri-lanka"
     title="Social Media Management Sri Lanka"
