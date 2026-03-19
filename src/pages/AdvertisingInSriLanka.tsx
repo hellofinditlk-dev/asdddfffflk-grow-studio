@@ -770,8 +770,7 @@ const AdvertisingInSriLanka = () => {
           </div>
         </section>
 
-        {/* Benefits of Digital Advertising */}
-        <section className="mb-16 bg-secondary rounded-2xl p-8 md:p-12">
+        <section id="benefits" className="mb-16 scroll-mt-20 bg-secondary rounded-2xl p-8 md:p-12">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Benefits of Digital Advertising in Sri Lanka</h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
             Digital advertising provides several advantages compared to traditional marketing methods.
