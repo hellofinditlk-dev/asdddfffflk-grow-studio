@@ -900,7 +900,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* Industry-Specific Advertising */}
-        <section className="mb-16">
+        <section id="industry-specific" className="mb-16 scroll-mt-20">
           <div className="rounded-2xl overflow-hidden shadow-lg mb-10">
             <img src={industriesImg} alt="Industry-specific digital marketing strategies connecting hotels, travel, fashion, restaurants, real estate, education, beauty, automotive, small business and ecommerce sectors" className="w-full h-auto" loading="lazy" />
           </div>
