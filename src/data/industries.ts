@@ -1119,6 +1119,7 @@ export const industries: IndustryData[] = [
   },
   {
     slug: "beauty-salon-digital-marketing-sri-lanka",
+    shortName: "Beauty Salon",
     seoTitle: "Beauty Salon Digital Marketing Sri Lanka | Salon Marketing Agency",
     metaDescription: "Grow your beauty salon with social media marketing, Instagram growth strategies, local SEO, and targeted ads in Sri Lanka. Spa marketing agency.",
     h1: "Digital Marketing for Beauty Salons in Sri Lanka",
