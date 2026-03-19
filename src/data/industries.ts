@@ -743,17 +743,15 @@ export const industries: IndustryData[] = [
     ],
     industryLinksHeading: "Digital Marketing Services for Multiple Industries",
     industryLinksIntro: "In addition to fashion brand marketing, Cypher Digital provides digital marketing solutions for various industries across Sri Lanka:",
-    bookingJourney: {
-      heading: "Understanding the Fashion Customer Journey",
-      intro: "Fashion customers don't buy instantly — they go through multiple stages before making a purchase decision.",
-      stages: [
-        { name: "Discovery", description: "Customers discover brands through Instagram, TikTok, and Google search. Visual content and SEO dominate this stage." },
-        { name: "Inspiration", description: "Customers look for outfit ideas, trends, and influencer styles. Social media is critical for inspiring purchase intent." },
-        { name: "Consideration", description: "Customers compare prices, reviews, and brand identity. Trust and branding matter most at this stage." },
-        { name: "Purchase", description: "Customers buy through ecommerce websites, Instagram shops, and online marketplaces." },
-        { name: "Loyalty", description: "Customers make repeat purchases, recommend brands, and share content. Retention drives long-term growth." },
-      ],
-    },
+    bookingJourneyHeading: "Understanding the Fashion Customer Journey",
+    bookingJourneyIntro: "Fashion customers don't buy instantly — they go through multiple stages before making a purchase decision.",
+    bookingJourney: [
+      { stage: "Discovery", description: "Customers discover brands through Instagram, TikTok, and Google search.", tip: "Visual content and SEO dominate this stage." },
+      { stage: "Inspiration", description: "Customers look for outfit ideas, trends, and influencer styles.", tip: "Social media is critical for inspiring purchase intent." },
+      { stage: "Consideration", description: "Customers compare prices, reviews, and brand identity.", tip: "Trust and branding matter most at this stage." },
+      { stage: "Purchase", description: "Customers buy through ecommerce websites, Instagram shops, and online marketplaces.", tip: "Seamless checkout and mobile UX drive conversions." },
+      { stage: "Loyalty", description: "Customers make repeat purchases, recommend brands, and share content.", tip: "Retention marketing drives long-term growth." },
+    ],
     extraSections: [
       {
         heading: "Ecommerce SEO & Conversion Optimization for Fashion Brands",
