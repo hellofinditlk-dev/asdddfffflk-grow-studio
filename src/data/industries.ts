@@ -332,6 +332,7 @@ export const industries: IndustryData[] = [
   },
   {
     slug: "travel-agency-digital-marketing-sri-lanka",
+    shortName: "Travel",
     seoTitle: "Travel Agency Digital Marketing Sri Lanka | Get More Tour Bookings | Cypher Digital",
     metaDescription: "Expert travel agency digital marketing in Sri Lanka. SEO, social media, Google Ads & CRO strategies to increase tour bookings and reach international travelers.",
     h1: "Travel Agency Digital Marketing in Sri Lanka – The Ultimate Guide to Getting More Tour Bookings",
