@@ -845,7 +845,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* Budget Guide */}
-        <section className="mb-16">
+        <section id="budget" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
             <DollarSign className="w-7 h-7 text-primary" />
             Advertising Budget Guide for Sri Lankan Businesses
