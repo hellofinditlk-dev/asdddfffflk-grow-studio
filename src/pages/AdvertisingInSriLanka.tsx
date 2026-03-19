@@ -791,7 +791,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* ===== NEW: Advertising Metrics ===== */}
-        <section className="mb-16">
+        <section id="metrics" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
             <LineChart className="w-7 h-7 text-primary" />
             Advertising Metrics Marketers Should Track
