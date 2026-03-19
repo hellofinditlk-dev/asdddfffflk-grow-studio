@@ -1235,12 +1235,93 @@ export const industries: IndustryData[] = [
     industryLinksHeading: "Digital Marketing Services for Multiple Industries",
     industryLinksIntro: "In addition to salon marketing, Cypher Digital provides digital marketing solutions for various industries across Sri Lanka:",
     faqs: [
-      { q: "What is beauty salon digital marketing?", a: "Beauty salon digital marketing involves promoting salon services online through social media marketing, search engine optimization, and online advertising campaigns." },
-      { q: "How can digital marketing increase salon bookings?", a: "Digital marketing increases salon visibility online and helps attract customers who are searching for beauty services." },
-      { q: "Which platform is best for salon marketing?", a: "Instagram, Facebook, TikTok, and Google Search are among the most effective platforms for beauty salon marketing." },
-      { q: "How long does SEO take for beauty salons?", a: "SEO typically takes 3-6 months to generate strong organic traffic and appointment inquiries." },
-      { q: "Do you create content for salons?", a: "Yes, we produce professional beauty reels, photos, and social media content tailored to your salon's brand." },
+      { q: "What is beauty salon digital marketing?", a: "Beauty salon digital marketing involves promoting salon services online through social media marketing, search engine optimization, and online advertising campaigns to attract more clients and increase bookings." },
+      { q: "How can digital marketing increase salon bookings?", a: "Digital marketing increases salon visibility online through SEO, social media, and paid ads, helping attract customers who are actively searching for beauty services in your area." },
+      { q: "Which platform is best for salon marketing?", a: "Instagram, Facebook, TikTok, and Google Search are among the most effective platforms for beauty salon marketing. Instagram is particularly powerful due to the visual nature of beauty services." },
+      { q: "How long does SEO take for beauty salons?", a: "SEO typically takes 3-6 months to generate strong organic traffic and appointment inquiries. Paid ads deliver immediate results." },
+      { q: "Do you create content for salons?", a: "Yes, we produce professional beauty reels, photos, and social media content tailored to your salon's brand and target audience." },
+      { q: "How can I get more salon clients?", a: "By using SEO, social media marketing, and paid ads to attract local customers. Combining organic and paid strategies delivers the best results." },
+      { q: "Is Instagram important for salons?", a: "Yes. Instagram is the most powerful platform for beauty marketing due to its visual nature. Before-and-after transformations, reels, and stories drive significant engagement and bookings." },
+      { q: "Can digital marketing help my salon compete with bigger brands?", a: "Absolutely. Local SEO and targeted social media marketing allow small salons to compete effectively by reaching nearby customers who are actively searching for beauty services." },
     ],
+    bookingJourney: [
+      { stage: "Discovery", description: "Customers search for 'salon near me', 'best bridal makeup artist Sri Lanka', or browse Instagram for beauty inspiration.", tip: "SEO + Google Maps optimization is critical at this stage." },
+      { stage: "Inspiration", description: "Customers browse Instagram, TikTok, and Facebook looking at before-and-after transformations, beauty trends, and salon showcases.", tip: "Visual content and reels drive decisions at this stage." },
+      { stage: "Consideration", description: "Customers compare reviews, prices, portfolios, and service menus across multiple salons.", tip: "Trust signals like reviews and professional photos are critical." },
+      { stage: "Booking", description: "Customers call, WhatsApp, or book online. Easy booking flow equals more conversions.", tip: "CRO + simplified booking experience is key." },
+      { stage: "Loyalty", description: "Satisfied customers return and refer others. Retention campaigns keep them engaged.", tip: "Email + WhatsApp marketing drives repeat bookings and referrals." },
+    ],
+    extraSections: [
+      {
+        heading: "Advanced Marketing Strategies for Beauty Salons",
+        intro: "To dominate competitors in the beauty industry, basic marketing is not enough. We implement advanced strategies that give your salon a significant competitive advantage.",
+        bullets: [
+          "Hyper-Local Targeting — We target specific areas like Colombo, Maharagama, Negombo, Dehiwala, and surrounding neighborhoods to ensure your ads reach customers who can actually visit your salon",
+          "Seasonal Campaigns — Wedding season, festive periods, and special occasions create peak demand. We build campaigns around these high-conversion windows to maximize bookings",
+          "Video-First Strategy — Short-form video content dominates social media. Before-and-after transformations, makeup tutorials, and salon walkthroughs generate the highest engagement",
+          "Retargeting Campaigns — We convert interested users who visited your website or social media but didn't book, bringing them back with targeted offers and reminders",
+        ],
+      },
+      {
+        heading: "Content Marketing for Beauty Salons",
+        intro: "Content marketing builds trust and drives long-term organic traffic to your salon's website. We create blog articles, video content, and social media posts that work together to build topical authority.",
+        bullets: [
+          "Bridal makeup tips and tutorials",
+          "Skincare routines for Sri Lankan climate",
+          "Haircare guides and trending beauty looks",
+          "Seasonal beauty advice and style inspiration",
+        ],
+        outro: "This type of content positions your salon as an authority and helps you rank for hundreds of related keywords, attracting customers at every stage of their decision journey.",
+      },
+      {
+        heading: "Conversion Funnel for Beauty Salons",
+        intro: "We build full-funnel marketing strategies that guide potential customers from discovery to booking.",
+        bullets: [
+          "Top Funnel — Social media content and SEO attract new audiences discovering beauty services online",
+          "Middle Funnel — Reviews, testimonials, portfolio content, and retargeting ads build trust with interested prospects",
+          "Bottom Funnel — Special offers, booking incentives, and streamlined booking experiences convert prospects into paying customers",
+        ],
+      },
+      {
+        heading: "Reducing Dependency on Walk-Ins Only",
+        intro: "Many salons rely primarily on walk-in traffic and word-of-mouth referrals. While valuable, they limit growth potential significantly.",
+        bullets: [
+          "Google search brings customers actively looking for beauty services",
+          "Social media builds brand awareness and drives daily inquiries",
+          "Paid ads deliver immediate visibility to targeted audiences",
+          "Email and WhatsApp marketing retain existing customers and drive repeat bookings",
+        ],
+        outro: "Our goal is to build a reliable digital pipeline that generates daily inquiries and bookings, giving your salon predictable revenue growth.",
+      },
+      {
+        heading: "How We Help You Get More Salon Bookings",
+        intro: "Our proven approach follows four key steps to ensure consistent growth rather than unpredictable spikes in business.",
+        bullets: [
+          "Increase your online visibility through SEO and social media optimization",
+          "Build trust through reviews, testimonials, and professional content",
+          "Drive inquiries through targeted advertising and optimized booking flows",
+          "Convert inquiries into confirmed bookings with follow-up strategies and remarketing",
+        ],
+      },
+    ],
+    locationsHeading: "Target Locations in Sri Lanka",
+    locationsList: ["Colombo", "Negombo", "Galle", "Kandy", "Dehiwala", "Maharagama", "Nugegoda", "Mount Lavinia", "Wattala", "Kaduwela"],
+    serviceSchema: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Beauty Salon Digital Marketing Sri Lanka",
+      "provider": {
+        "@type": "Organization",
+        "name": "Cypher Digital",
+        "url": "https://cypherdigital.lk"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Sri Lanka"
+      },
+      "serviceType": "Beauty Salon Marketing",
+      "description": "SEO, social media marketing, Google Ads and lead generation for beauty salons in Sri Lanka."
+    },
   },
   {
     slug: "automotive-digital-marketing-sri-lanka",
