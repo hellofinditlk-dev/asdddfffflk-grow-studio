@@ -816,7 +816,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* Common Mistakes */}
-        <section className="mb-16">
+        <section id="mistakes" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
             <AlertTriangle className="w-7 h-7 text-destructive" />
             Common Advertising Mistakes Businesses Make in Sri Lanka
