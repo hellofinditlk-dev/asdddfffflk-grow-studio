@@ -45,6 +45,14 @@ export interface IndustryData {
   bottomCtaText?: string[];
   industryLinksHeading?: string;
   industryLinksIntro?: string;
+  /** Extra deep-content sections for pillar-level pages */
+  bookingJourney?: { stage: string; description: string; tip: string }[];
+  bookingJourneyHeading?: string;
+  bookingJourneyIntro?: string;
+  extraSections?: { heading: string; intro?: string; bullets?: string[]; outro?: string }[];
+  locationsHeading?: string;
+  locationsList?: string[];
+  serviceSchema?: Record<string, unknown>;
 }
 
 export const industries: IndustryData[] = [
