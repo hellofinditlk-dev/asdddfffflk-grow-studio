@@ -748,7 +748,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* Best Advertising Strategies */}
-        <section className="mb-16">
+        <section id="strategies" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Best Advertising Strategies for Sri Lankan Businesses</h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
             Successful advertising campaigns require strategic planning. Businesses in Sri Lanka often use the following strategies:
