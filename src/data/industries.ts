@@ -1254,50 +1254,59 @@ export const industries: IndustryData[] = [
     extraSections: [
       {
         heading: "Advanced Marketing Strategies for Beauty Salons",
-        paragraphs: [
-          "To dominate competitors in the beauty industry, basic marketing is not enough. We implement advanced strategies that give your salon a significant competitive advantage.",
-          "**Hyper-Local Targeting** — We target specific areas like Colombo, Maharagama, Negombo, Dehiwala, and surrounding neighborhoods to ensure your ads reach customers who can actually visit your salon.",
-          "**Seasonal Campaigns** — Wedding season, festive periods, and special occasions create peak demand. We build campaigns around these high-conversion windows to maximize bookings.",
-          "**Video-First Strategy** — Short-form video content dominates social media. Before-and-after transformations, makeup tutorials, and salon walkthroughs generate the highest engagement in the beauty industry.",
-          "**Retargeting Campaigns** — We convert interested users who visited your website or social media but didn't book, bringing them back with targeted offers and reminders.",
+        intro: "To dominate competitors in the beauty industry, basic marketing is not enough. We implement advanced strategies that give your salon a significant competitive advantage.",
+        bullets: [
+          "Hyper-Local Targeting — We target specific areas like Colombo, Maharagama, Negombo, Dehiwala, and surrounding neighborhoods to ensure your ads reach customers who can actually visit your salon",
+          "Seasonal Campaigns — Wedding season, festive periods, and special occasions create peak demand. We build campaigns around these high-conversion windows to maximize bookings",
+          "Video-First Strategy — Short-form video content dominates social media. Before-and-after transformations, makeup tutorials, and salon walkthroughs generate the highest engagement",
+          "Retargeting Campaigns — We convert interested users who visited your website or social media but didn't book, bringing them back with targeted offers and reminders",
         ],
       },
       {
         heading: "Content Marketing for Beauty Salons",
-        paragraphs: [
-          "Content marketing builds trust and drives long-term organic traffic to your salon's website.",
-          "High-performing content topics include bridal makeup tips, skincare routines for Sri Lankan climate, haircare guides, trending beauty looks, and seasonal beauty advice. This type of content positions your salon as an authority and helps you rank for hundreds of related keywords.",
-          "We create blog articles, video content, and social media posts that work together to build topical authority and attract customers at every stage of their decision journey.",
+        intro: "Content marketing builds trust and drives long-term organic traffic to your salon's website. We create blog articles, video content, and social media posts that work together to build topical authority.",
+        bullets: [
+          "Bridal makeup tips and tutorials",
+          "Skincare routines for Sri Lankan climate",
+          "Haircare guides and trending beauty looks",
+          "Seasonal beauty advice and style inspiration",
         ],
+        outro: "This type of content positions your salon as an authority and helps you rank for hundreds of related keywords, attracting customers at every stage of their decision journey.",
       },
       {
         heading: "Conversion Funnel for Beauty Salons",
-        paragraphs: [
-          "We build full-funnel marketing strategies that guide potential customers from discovery to booking.",
-          "**Top Funnel** — Social media content and SEO attract new audiences who are discovering beauty services online.",
-          "**Middle Funnel** — Reviews, testimonials, portfolio content, and retargeting ads build trust with interested prospects.",
-          "**Bottom Funnel** — Special offers, booking incentives, and streamlined booking experiences convert interested prospects into paying customers.",
+        intro: "We build full-funnel marketing strategies that guide potential customers from discovery to booking.",
+        bullets: [
+          "Top Funnel — Social media content and SEO attract new audiences discovering beauty services online",
+          "Middle Funnel — Reviews, testimonials, portfolio content, and retargeting ads build trust with interested prospects",
+          "Bottom Funnel — Special offers, booking incentives, and streamlined booking experiences convert prospects into paying customers",
         ],
       },
       {
         heading: "Reducing Dependency on Walk-Ins Only",
-        paragraphs: [
-          "Many salons rely primarily on walk-in traffic and word-of-mouth referrals. While these are valuable, they limit growth potential significantly.",
-          "Digital marketing opens up multiple channels for attracting new clients — Google search, social media, paid ads, email marketing, and influencer collaborations. This diversification ensures consistent bookings regardless of location or season.",
-          "Our goal is to build a reliable digital pipeline that generates daily inquiries and bookings, giving your salon predictable revenue growth.",
+        intro: "Many salons rely primarily on walk-in traffic and word-of-mouth referrals. While valuable, they limit growth potential significantly.",
+        bullets: [
+          "Google search brings customers actively looking for beauty services",
+          "Social media builds brand awareness and drives daily inquiries",
+          "Paid ads deliver immediate visibility to targeted audiences",
+          "Email and WhatsApp marketing retain existing customers and drive repeat bookings",
         ],
+        outro: "Our goal is to build a reliable digital pipeline that generates daily inquiries and bookings, giving your salon predictable revenue growth.",
       },
       {
         heading: "How We Help You Get More Salon Bookings",
-        paragraphs: [
-          "Our proven approach follows four key steps: First, we increase your online visibility through SEO and social media. Second, we build trust through reviews, testimonials, and professional content. Third, we drive inquiries through targeted advertising and optimized booking flows. Fourth, we convert those inquiries into confirmed bookings with follow-up strategies and remarketing.",
-          "This systematic approach ensures consistent growth rather than unpredictable spikes in business.",
+        intro: "Our proven approach follows four key steps to ensure consistent growth rather than unpredictable spikes in business.",
+        bullets: [
+          "Increase your online visibility through SEO and social media optimization",
+          "Build trust through reviews, testimonials, and professional content",
+          "Drive inquiries through targeted advertising and optimized booking flows",
+          "Convert inquiries into confirmed bookings with follow-up strategies and remarketing",
         ],
       },
     ],
     locationsHeading: "Target Locations in Sri Lanka",
-    locations: ["Colombo", "Negombo", "Galle", "Kandy", "Dehiwala", "Maharagama", "Nugegoda", "Mount Lavinia", "Wattala", "Kaduwela"],
-    serviceSchema: `{
+    locationsList: ["Colombo", "Negombo", "Galle", "Kandy", "Dehiwala", "Maharagama", "Nugegoda", "Mount Lavinia", "Wattala", "Kaduwela"],
+    serviceSchema: {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "Beauty Salon Digital Marketing Sri Lanka",
@@ -1312,7 +1321,7 @@ export const industries: IndustryData[] = [
       },
       "serviceType": "Beauty Salon Marketing",
       "description": "SEO, social media marketing, Google Ads and lead generation for beauty salons in Sri Lanka."
-    }`,
+    },
   },
   {
     slug: "automotive-digital-marketing-sri-lanka",
