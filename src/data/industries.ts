@@ -1244,6 +1244,7 @@ export const industries: IndustryData[] = [
   },
   {
     slug: "automotive-digital-marketing-sri-lanka",
+    shortName: "Automotive",
     seoTitle: "Automotive Digital Marketing Sri Lanka | Car Dealer Marketing Agency",
     metaDescription: "Generate car buyer leads with automotive digital marketing, video showcases, SEO, and targeted ads in Sri Lanka. Vehicle advertising agency.",
     h1: "Digital Marketing for Automotive Businesses in Sri Lanka",
