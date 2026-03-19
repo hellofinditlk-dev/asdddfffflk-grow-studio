@@ -628,6 +628,7 @@ export const industries: IndustryData[] = [
   },
   {
     slug: "fashion-brand-digital-marketing-sri-lanka",
+    shortName: "Fashion",
     seoTitle: "Fashion Brand Digital Marketing Sri Lanka | Clothing Brand Marketing Agency",
     metaDescription: "Grow your clothing brand online with social media marketing, influencer campaigns, SEO, and Facebook ads in Sri Lanka. Fashion advertising agency.",
     h1: "Digital Marketing for Fashion & Clothing Brands in Sri Lanka",
