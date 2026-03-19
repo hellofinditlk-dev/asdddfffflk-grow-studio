@@ -355,7 +355,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* Types of Advertising */}
-        <section className="mb-16">
+        <section id="types" className="mb-16 scroll-mt-20">
           <div className="grid md:grid-cols-2 gap-10 items-center mb-10">
             <div>
               <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Types of Advertising in Sri Lanka</h2>
