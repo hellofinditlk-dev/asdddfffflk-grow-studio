@@ -1485,6 +1485,7 @@ export const industries: IndustryData[] = [
   },
   {
     slug: "ecommerce-digital-marketing-sri-lanka",
+    shortName: "Ecommerce",
     seoTitle: "Ecommerce Digital Marketing Sri Lanka | Online Store Marketing Agency",
     metaDescription: "Increase online sales with ecommerce marketing strategies including SEO, Facebook ads, Google Shopping, product videos, and retargeting campaigns in Sri Lanka.",
     h1: "Ecommerce Digital Marketing Services in Sri Lanka",
