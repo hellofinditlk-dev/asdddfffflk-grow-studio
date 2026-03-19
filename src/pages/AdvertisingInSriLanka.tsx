@@ -66,9 +66,16 @@ const faqs = [
 
 const AdvertisingInSriLanka = () => {
   useEffect(() => {
-    const articleScript = document.createElement("script");
-    articleScript.type = "application/ld+json";
-    articleScript.text = JSON.stringify({
+    const scripts: HTMLScriptElement[] = [];
+    const addSchema = (data: object) => {
+      const s = document.createElement("script");
+      s.type = "application/ld+json";
+      s.text = JSON.stringify(data);
+      document.head.appendChild(s);
+      scripts.push(s);
+    };
+
+    addSchema({
       "@context": "https://schema.org",
       "@type": "Article",
       headline: "Advertising in Sri Lanka: The Complete Guide to Digital Advertising for Businesses",
@@ -78,13 +85,10 @@ const AdvertisingInSriLanka = () => {
       publisher: { "@type": "Organization", name: "Cypher Digital", url: "https://cypherdigital.lk" },
       mainEntityOfPage: "https://cypherdigital.lk/advertising-in-sri-lanka",
       datePublished: "2025-03-16",
-      dateModified: "2026-03-16",
+      dateModified: "2026-03-19",
     });
-    document.head.appendChild(articleScript);
 
-    const faqScript = document.createElement("script");
-    faqScript.type = "application/ld+json";
-    faqScript.text = JSON.stringify({
+    addSchema({
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map(f => ({
@@ -93,11 +97,8 @@ const AdvertisingInSriLanka = () => {
         acceptedAnswer: { "@type": "Answer", text: f.a }
       }))
     });
-    document.head.appendChild(faqScript);
 
-    const serviceScript = document.createElement("script");
-    serviceScript.type = "application/ld+json";
-    serviceScript.text = JSON.stringify({
+    addSchema({
       "@context": "https://schema.org",
       "@type": "Service",
       name: "Advertising in Sri Lanka",
@@ -106,27 +107,51 @@ const AdvertisingInSriLanka = () => {
       serviceType: "Advertising Services",
       description: "Comprehensive advertising services in Sri Lanka including digital advertising, social media marketing, Google Ads, and brand campaigns."
     });
-    document.head.appendChild(serviceScript);
 
-    return () => {
-      document.head.removeChild(articleScript);
-      document.head.removeChild(faqScript);
-      document.head.removeChild(serviceScript);
-    };
+    addSchema({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://cypherdigital.lk/" },
+        { "@type": "ListItem", position: 2, name: "Advertising in Sri Lanka", item: "https://cypherdigital.lk/advertising-in-sri-lanka" }
+      ]
+    });
+
+    addSchema({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Advertising in Sri Lanka – Complete Guide (2026)",
+      description: "The most comprehensive guide to advertising in Sri Lanka covering digital channels, costs, strategies, and industry-specific marketing.",
+      url: "https://cypherdigital.lk/advertising-in-sri-lanka",
+      isPartOf: { "@type": "WebSite", name: "Cypher Digital", url: "https://cypherdigital.lk" },
+      about: { "@type": "Thing", name: "Advertising in Sri Lanka" },
+      lastReviewed: "2026-03-19"
+    });
+
+    return () => { scripts.forEach(s => document.head.removeChild(s)); };
   }, []);
 
   return (
     <>
       <SEOHead
-        title="Advertising in Sri Lanka: Complete Guide for Businesses (2026)"
-        description="Learn about advertising in Sri Lanka. Comprehensive guide covering digital audience data, advertising costs, best platforms, targeting strategies, and industry-specific marketing for Sri Lankan businesses."
+        title="Advertising in Sri Lanka (2026) – Complete Guide | Cypher Digital"
+        description="The #1 guide to advertising in Sri Lanka. Learn about digital advertising costs, best platforms, targeting strategies, industry-specific marketing, and how to grow your business with Google Ads, Facebook Ads, SEO & more."
         canonical="https://cypherdigital.lk/advertising-in-sri-lanka"
       />
+
+      {/* Breadcrumb */}
+      <nav className="container mx-auto px-4 pt-4" aria-label="Breadcrumb">
+        <ol className="flex items-center gap-2 text-sm text-muted-foreground">
+          <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
+          <li>/</li>
+          <li className="text-foreground font-medium">Advertising in Sri Lanka</li>
+        </ol>
+      </nav>
 
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Digital advertising dashboard showing marketing analytics for businesses in Sri Lanka" className="w-full h-full object-cover" loading="eager" />
+          <img src={heroImg} alt="Advertising in Sri Lanka - digital marketing analytics dashboard for Sri Lankan businesses" className="w-full h-full object-cover" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--hero-bg)/0.92)] to-[hsl(var(--hero-bg)/0.75)]" />
         </div>
         <div className="relative container mx-auto px-4 py-24 md:py-36 text-center max-w-4xl">
@@ -134,20 +159,62 @@ const AdvertisingInSriLanka = () => {
             Complete Digital Advertising Guide 2026
           </span>
           <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-[hsl(var(--hero-foreground))]">
-            <a href="https://cypherdigital.lk/" className="text-primary hover:underline">Advertising in Sri Lanka</a>: The Complete Guide to Digital Advertising for Businesses
+            Advertising in Sri Lanka: The Complete Guide to Digital Advertising for Businesses
           </h1>
           <p className="text-lg md:text-xl text-[hsl(var(--hero-muted))] max-w-3xl mx-auto leading-relaxed">
-            Discover how modern digital advertising strategies help Sri Lankan businesses increase brand awareness, attract customers, and drive measurable growth.
+            Discover how modern digital advertising strategies help Sri Lankan businesses increase brand awareness, attract customers, and drive measurable growth. Published by <a href="https://cypherdigital.lk/" className="text-primary hover:underline font-semibold">Cypher Digital</a>.
           </p>
         </div>
       </section>
 
       <article className="container mx-auto px-4 py-16 max-w-5xl">
 
-        {/* Introduction */}
+        {/* Table of Contents */}
         <section className="mb-16">
+          <div className="max-w-4xl mx-auto p-6 md:p-8 rounded-2xl border border-border bg-secondary">
+            <h2 className="font-heading text-xl md:text-2xl font-bold mb-4">📋 Table of Contents – Advertising in Sri Lanka</h2>
+            <nav aria-label="Table of contents">
+              <ol className="grid sm:grid-cols-2 gap-2">
+                {[
+                  { id: "what-is", label: "What is Advertising in Sri Lanka?" },
+                  { id: "market-overview", label: "Market Overview" },
+                  { id: "digital-audience", label: "Digital Audience Data" },
+                  { id: "types", label: "Types of Advertising" },
+                  { id: "best-channels", label: "Best Advertising Channels" },
+                  { id: "costs", label: "Advertising Costs" },
+                  { id: "best-times", label: "Best Advertising Times" },
+                  { id: "strategies", label: "Best Strategies" },
+                  { id: "benefits", label: "Benefits of Digital Advertising" },
+                  { id: "metrics", label: "Key Metrics to Track" },
+                  { id: "mistakes", label: "Common Mistakes" },
+                  { id: "budget", label: "Budget Guide" },
+                  { id: "targeting", label: "Targeting Strategies" },
+                  { id: "industry-specific", label: "Industry-Specific Strategies" },
+                  { id: "trends", label: "Trends (2026)" },
+                  { id: "agency", label: "Choosing an Agency" },
+                  { id: "faq", label: "FAQs" },
+                ].map((item, i) => (
+                  <li key={item.id}>
+                    <a href={`#${item.id}`} className="flex items-center gap-2 p-2 rounded-lg hover:bg-background transition-colors text-sm text-muted-foreground hover:text-primary">
+                      <span className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 text-xs font-bold text-primary">{i + 1}</span>
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          </div>
+        </section>
+
+        {/* What is Advertising - Featured Snippet Bait */}
+        <section id="what-is" className="mb-16 scroll-mt-20">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Introduction</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">What is Advertising in Sri Lanka?</h2>
+            <div className="p-6 md:p-8 rounded-2xl border-2 border-primary/20 bg-primary/5 mb-6">
+              <p className="text-lg leading-relaxed font-medium">
+                <strong>Advertising in Sri Lanka</strong> refers to the practice of promoting products, services, or brands to Sri Lankan consumers through digital and traditional media channels. This includes Google Ads, Facebook and Instagram advertising, SEO, YouTube video ads, TikTok campaigns, television, radio, newspaper, and billboard advertising. Sri Lanka's advertising industry is rapidly growing, driven by increasing internet penetration (50–55%), over 8 million social media users, and mobile-first consumer behavior.
+              </p>
+            </div>
             <p className="text-muted-foreground leading-relaxed text-lg mb-4">
               <a href="https://cypherdigital.lk/" className="text-primary font-semibold hover:underline">Advertising in Sri Lanka</a> has evolved dramatically over the past decade. Businesses are no longer limited to traditional advertising channels such as television, radio, and newspapers. Today, digital platforms allow businesses to reach their target audience more efficiently through data-driven campaigns.
             </p>
@@ -161,7 +228,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* Market Overview */}
-        <section className="mb-16">
+        <section id="market-overview" className="mb-16 scroll-mt-20">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
               <PieChart className="w-7 h-7 text-primary" />
@@ -195,7 +262,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* ===== NEW: Digital Audience in Sri Lanka ===== */}
-        <section className="mb-16">
+        <section id="digital-audience" className="mb-16 scroll-mt-20">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
               <Users className="w-7 h-7 text-primary" />
@@ -288,7 +355,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* Types of Advertising */}
-        <section className="mb-16">
+        <section id="types" className="mb-16 scroll-mt-20">
           <div className="grid md:grid-cols-2 gap-10 items-center mb-10">
             <div>
               <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Types of Advertising in Sri Lanka</h2>
@@ -381,7 +448,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* ===== NEW: Best Performing Advertising Channels ===== */}
-        <section className="mb-16">
+        <section id="best-channels" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
             <BarChart3 className="w-7 h-7 text-primary" />
             Best Performing Advertising Channels in Sri Lanka
@@ -438,7 +505,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* ===== NEW: Typical Advertising Costs ===== */}
-        <section className="mb-16">
+        <section id="costs" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
             <DollarSign className="w-7 h-7 text-primary" />
             Typical Advertising Costs in Sri Lanka
@@ -507,7 +574,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* ===== NEW: Best Advertising Times ===== */}
-        <section className="mb-16">
+        <section id="best-times" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
             <Clock className="w-7 h-7 text-primary" />
             Best Advertising Times in Sri Lanka
@@ -589,7 +656,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* ===== NEW: Targeting Strategies ===== */}
-        <section className="mb-16">
+        <section id="targeting" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
             <MapPin className="w-7 h-7 text-primary" />
             Advertising Targeting Strategies for Sri Lanka
@@ -681,7 +748,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* Best Advertising Strategies */}
-        <section className="mb-16">
+        <section id="strategies" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Best Advertising Strategies for Sri Lankan Businesses</h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
             Successful advertising campaigns require strategic planning. Businesses in Sri Lanka often use the following strategies:
@@ -703,8 +770,7 @@ const AdvertisingInSriLanka = () => {
           </div>
         </section>
 
-        {/* Benefits of Digital Advertising */}
-        <section className="mb-16 bg-secondary rounded-2xl p-8 md:p-12">
+        <section id="benefits" className="mb-16 scroll-mt-20 bg-secondary rounded-2xl p-8 md:p-12">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Benefits of Digital Advertising in Sri Lanka</h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
             Digital advertising provides several advantages compared to traditional marketing methods.
@@ -725,7 +791,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* ===== NEW: Advertising Metrics ===== */}
-        <section className="mb-16">
+        <section id="metrics" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
             <LineChart className="w-7 h-7 text-primary" />
             Advertising Metrics Marketers Should Track
@@ -750,7 +816,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* Common Mistakes */}
-        <section className="mb-16">
+        <section id="mistakes" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
             <AlertTriangle className="w-7 h-7 text-destructive" />
             Common Advertising Mistakes Businesses Make in Sri Lanka
@@ -779,7 +845,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* Budget Guide */}
-        <section className="mb-16">
+        <section id="budget" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
             <DollarSign className="w-7 h-7 text-primary" />
             Advertising Budget Guide for Sri Lankan Businesses
@@ -834,7 +900,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* Industry-Specific Advertising */}
-        <section className="mb-16">
+        <section id="industry-specific" className="mb-16 scroll-mt-20">
           <div className="rounded-2xl overflow-hidden shadow-lg mb-10">
             <img src={industriesImg} alt="Industry-specific digital marketing strategies connecting hotels, travel, fashion, restaurants, real estate, education, beauty, automotive, small business and ecommerce sectors" className="w-full h-auto" loading="lazy" />
           </div>
@@ -865,7 +931,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* Digital Advertising Trends */}
-        <section className="mb-16">
+        <section id="trends" className="mb-16 scroll-mt-20">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Advertising Trends in Sri Lanka (2026)</h2>
@@ -919,8 +985,7 @@ const AdvertisingInSriLanka = () => {
           </p>
         </section>
 
-        {/* Choosing the Right Agency */}
-        <section className="mb-16 bg-secondary rounded-2xl p-8 md:p-12">
+        <section id="agency" className="mb-16 scroll-mt-20 bg-secondary rounded-2xl p-8 md:p-12">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Choosing the Right Advertising Agency</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
             Working with a professional advertising agency can help businesses develop effective marketing strategies and achieve measurable results. A professional agency provides services such as:
@@ -967,7 +1032,7 @@ const AdvertisingInSriLanka = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="mb-16">
+        <section id="faq" className="mb-16 scroll-mt-20">
           <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Frequently Asked Questions About Advertising in Sri Lanka</h2>
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, i) => (
@@ -999,400 +1064,6 @@ const AdvertisingInSriLanka = () => {
                 {label}
               </Link>
             ))}
-          </div>
-        </section>
-
-        {/* ===== NEW SEO EXPANSION: Complete Advertising Guide ===== */}
-
-        {/* Why Advertising is More Important Than Ever */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
-              <TrendingUp className="w-7 h-7 text-primary" />
-              Why Advertising in Sri Lanka is More Important Than Ever
-            </h2>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              Sri Lanka is experiencing a digital transformation driven by increasing internet penetration, smartphone usage, and social media adoption. Millions of Sri Lankans actively use social media daily, and mobile-first behavior dominates consumer interactions.
-            </p>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-              Online search is the primary method for discovering products and services, and digital advertising spend is growing rapidly across all industries.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-4 mb-6">
-              <div className="p-5 rounded-xl border border-border bg-background">
-                <h3 className="font-bold text-destructive mb-2">Without Advertising</h3>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>• Limited brand awareness</li>
-                  <li>• Low customer acquisition</li>
-                  <li>• Poor market visibility</li>
-                </ul>
-              </div>
-              <div className="p-5 rounded-xl border border-primary/30 bg-primary/5">
-                <h3 className="font-bold text-primary mb-2">With Strategic Advertising</h3>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>✔ Reach the right audience</li>
-                  <li>✔ Increase brand recognition</li>
-                  <li>✔ Drive leads and sales</li>
-                  <li>✔ Build long-term customer relationships</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Traditional vs Digital Advertising */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
-              <Layers className="w-7 h-7 text-primary" />
-              Traditional vs Digital Advertising in Sri Lanka
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="p-6 rounded-xl border border-border bg-background">
-                <h3 className="font-heading text-xl font-bold mb-4 flex items-center gap-2">
-                  📺 Traditional Advertising
-                </h3>
-                <p className="text-muted-foreground mb-4">Traditional media still plays an important role in building mass awareness across Sri Lanka.</p>
-                <h4 className="font-semibold mb-2">Key Channels:</h4>
-                <ul className="space-y-1 text-sm text-muted-foreground mb-4">
-                  <li>• Television advertising</li>
-                  <li>• Radio advertising</li>
-                  <li>• Newspaper advertising</li>
-                  <li>• Billboard advertising</li>
-                </ul>
-                <h4 className="font-semibold mb-2">Benefits:</h4>
-                <ul className="space-y-1 text-sm text-muted-foreground mb-4">
-                  <li>✔ Wide reach</li>
-                  <li>✔ Strong brand recall</li>
-                  <li>✔ Credibility</li>
-                </ul>
-                <h4 className="font-semibold mb-2">Limitations:</h4>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>❌ Expensive</li>
-                  <li>❌ Limited targeting</li>
-                  <li>❌ Difficult to measure ROI</li>
-                </ul>
-                <p className="text-xs text-primary font-medium mt-4">👉 Best for: Large-scale awareness campaigns</p>
-              </div>
-
-              <div className="p-6 rounded-xl border border-primary/30 bg-primary/5">
-                <h3 className="font-heading text-xl font-bold mb-4 flex items-center gap-2">
-                  💻 Digital Advertising
-                </h3>
-                <p className="text-muted-foreground mb-4">Digital advertising is now the most effective and measurable way to reach customers in Sri Lanka.</p>
-                <h4 className="font-semibold mb-2">Key Channels:</h4>
-                <ul className="space-y-1 text-sm text-muted-foreground mb-4">
-                  <li>• <Link to="/google-ads-sri-lanka" className="text-primary hover:underline">Google Ads</Link></li>
-                  <li>• <Link to="/facebook-ads-sri-lanka" className="text-primary hover:underline">Social media advertising</Link></li>
-                  <li>• Display advertising</li>
-                  <li>• <Link to="/video-production-sri-lanka" className="text-primary hover:underline">Video advertising</Link></li>
-                  <li>• Native advertising</li>
-                </ul>
-                <h4 className="font-semibold mb-2">Benefits:</h4>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>✔ Precise targeting</li>
-                  <li>✔ Real-time tracking</li>
-                  <li>✔ Cost-effective</li>
-                  <li>✔ High ROI</li>
-                </ul>
-                <p className="text-xs text-primary font-medium mt-4">👉 Best for: Lead generation and sales</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Search Engine Advertising */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
-              <MousePointerClick className="w-7 h-7 text-primary" />
-              Search Engine Advertising (Google Ads) in Sri Lanka
-            </h2>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              Google is the first place customers go when searching for products or services. When users search for terms like "advertising agency Sri Lanka" or "best marketing company Sri Lanka," your business needs to appear at the top.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-4 mb-6">
-              {[
-                { icon: Target, label: "Keyword targeting" },
-                { icon: Eye, label: "Search ads" },
-                { icon: Layers, label: "Display ads" },
-                { icon: MousePointerClick, label: "Retargeting" },
-              ].map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-center gap-3 p-4 rounded-xl border border-border bg-background">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <span className="font-medium">{label}</span>
-                </div>
-              ))}
-            </div>
-            <p className="text-sm text-primary font-medium">👉 Result: High-intent traffic that converts into customers</p>
-          </div>
-        </section>
-
-        {/* Social Media Advertising */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
-              <Smartphone className="w-7 h-7 text-primary" />
-              Social Media Advertising in Sri Lanka
-            </h2>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-              Platforms like Facebook, Instagram, TikTok, and LinkedIn dominate user engagement in Sri Lanka. With a massive user base, visual storytelling capabilities, and advanced targeting options, social media advertising is essential for every business.
-            </p>
-            <div className="grid sm:grid-cols-3 gap-4 mb-6">
-              {["Brand awareness", "Lead generation", "Conversion campaigns"].map(type => (
-                <div key={type} className="p-4 rounded-xl border border-border bg-background text-center">
-                  <p className="font-semibold text-sm">{type}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-sm text-primary font-medium">👉 Result: Engagement + conversions</p>
-          </div>
-        </section>
-
-        {/* Video & Influencer Advertising */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="p-6 rounded-xl border border-border bg-background">
-                <h3 className="font-heading text-xl font-bold mb-4">🎥 Video Advertising</h3>
-                <p className="text-muted-foreground text-sm mb-4">Video is the most powerful content format today. Platforms like YouTube, TikTok, and Instagram Reels drive the highest engagement rates.</p>
-                <p className="text-sm text-primary font-medium">👉 Result: Higher engagement and brand recall</p>
-              </div>
-              <div className="p-6 rounded-xl border border-border bg-background">
-                <h3 className="font-heading text-xl font-bold mb-4">🤝 Influencer Advertising</h3>
-                <p className="text-muted-foreground text-sm mb-4">Influencers play a major role in shaping consumer decisions in Sri Lanka. Both macro and micro influencers drive trust and reach for brands.</p>
-                <p className="text-sm text-primary font-medium">👉 Result: Authentic trust + expanded reach</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Data-Driven Advertising */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
-              <BarChart3 className="w-7 h-7 text-primary" />
-              Data-Driven Advertising Strategy
-            </h2>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-              Modern advertising relies on data to optimize campaigns and maximize ROI. Key performance metrics every business should track:
-            </p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-              {[
-                { metric: "CTR", desc: "Click Through Rate" },
-                { metric: "CPC", desc: "Cost Per Click" },
-                { metric: "CVR", desc: "Conversion Rate" },
-                { metric: "ROI", desc: "Return on Investment" },
-              ].map(({ metric, desc }) => (
-                <div key={metric} className="p-4 rounded-xl border border-border bg-background text-center">
-                  <p className="text-xl font-extrabold text-primary mb-1">{metric}</p>
-                  <p className="text-xs text-muted-foreground">{desc}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-sm text-primary font-medium">👉 Result: Optimized campaigns with measurable outcomes</p>
-          </div>
-        </section>
-
-        {/* Full-Funnel Strategy */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
-              <LineChart className="w-7 h-7 text-primary" />
-              Full-Funnel Advertising Strategy
-            </h2>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-              To maximize results, businesses must use a full-funnel approach that guides customers from awareness to conversion.
-            </p>
-            <div className="grid md:grid-cols-3 gap-4 mb-6">
-              <div className="p-5 rounded-xl border border-border bg-background text-center">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                  <Eye className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-bold mb-2">Top Funnel</h3>
-                <p className="text-xs text-muted-foreground">Awareness</p>
-                <p className="text-sm text-muted-foreground mt-2">Social media + Display ads</p>
-              </div>
-              <div className="p-5 rounded-xl border border-primary/30 bg-primary/5 text-center">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                  <Brain className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-bold mb-2">Middle Funnel</h3>
-                <p className="text-xs text-muted-foreground">Consideration</p>
-                <p className="text-sm text-muted-foreground mt-2">Retargeting + Content marketing</p>
-              </div>
-              <div className="p-5 rounded-xl border border-border bg-background text-center">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                  <DollarSign className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-bold mb-2">Bottom Funnel</h3>
-                <p className="text-xs text-muted-foreground">Conversion</p>
-                <p className="text-sm text-muted-foreground mt-2">Search ads + Landing pages</p>
-              </div>
-            </div>
-            <p className="text-sm text-primary font-medium">👉 Result: Higher conversion rates across all stages</p>
-          </div>
-        </section>
-
-        {/* Industry-Specific Strategies */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
-              <Target className="w-7 h-7 text-primary" />
-              Industry-Specific Advertising Strategies in Sri Lanka
-            </h2>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-              Different industries require different advertising strategies. Here's how we tailor campaigns:
-            </p>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {[
-                { industry: "🏨 Hospitality & Tourism", strategy: "SEO + social media + Google Ads", link: "/hotel-digital-marketing-sri-lanka" },
-                { industry: "🎓 Education", strategy: "Lead generation + intake promotions", link: "/education-marketing-agency-sri-lanka" },
-                { industry: "🛒 Ecommerce", strategy: "Shopping ads + retargeting", link: "/ecommerce-digital-marketing-sri-lanka" },
-                { industry: "🏠 Real Estate", strategy: "Lead ads + video marketing", link: "/real-estate-digital-marketing-sri-lanka" },
-                { industry: "🍽️ Restaurants", strategy: "Social media + local SEO", link: "/restaurant-digital-marketing-sri-lanka" },
-                { industry: "💇 Beauty Salons", strategy: "Instagram + Google Maps", link: "/beauty-salon-digital-marketing-sri-lanka" },
-              ].map(({ industry, strategy, link }) => (
-                <Link key={industry} to={link} className="flex items-start gap-3 p-4 rounded-xl border border-border bg-background hover:border-primary/30 hover:shadow-sm transition-all">
-                  <div>
-                    <p className="font-bold text-sm">{industry}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{strategy}</p>
-                  </div>
-                  <ArrowRight className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Advanced Strategies */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
-              <Zap className="w-7 h-7 text-primary" />
-              Advanced Advertising Strategies to Dominate in Sri Lanka
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-4 mb-6">
-              {[
-                { title: "🔥 Hyper-Targeting", desc: "Target by location, interests, behavior, and demographics for maximum relevance." },
-                { title: "🔥 Retargeting", desc: "Show ads to users who already interacted with your brand to increase conversions." },
-                { title: "🔥 AI & Automation", desc: "Use AI-powered tools to optimize campaigns, predict performance, and reduce costs." },
-                { title: "🔥 CRO", desc: "Improve landing pages and user experience to convert more visitors into customers." },
-              ].map(({ title, desc }) => (
-                <div key={title} className="p-5 rounded-xl border border-border bg-background">
-                  <h3 className="font-bold mb-2">{title}</h3>
-                  <p className="text-sm text-muted-foreground">{desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Building a Campaign */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
-              <Layers className="w-7 h-7 text-primary" />
-              Building a Strong Advertising Campaign
-            </h2>
-            <div className="space-y-4">
-              {[
-                { step: "Step 1", title: "Define Goals", desc: "Set clear, measurable objectives for your campaign." },
-                { step: "Step 2", title: "Identify Audience", desc: "Understand your target customers' demographics and behavior." },
-                { step: "Step 3", title: "Choose Channels", desc: "Select the right mix of digital and traditional platforms." },
-                { step: "Step 4", title: "Create Content", desc: "Develop compelling creatives that resonate with your audience." },
-                { step: "Step 5", title: "Optimize", desc: "Continuously monitor, test, and improve campaign performance." },
-              ].map(({ step, title, desc }) => (
-                <div key={step} className="flex items-start gap-4 p-4 rounded-xl border border-border bg-background">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-xs font-bold text-primary">{step.split(" ")[1]}</span>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-sm">{title}</h3>
-                    <p className="text-xs text-muted-foreground mt-1">{desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <p className="text-sm text-primary font-medium mt-4">👉 Result: High-performing campaigns that deliver real business growth</p>
-          </div>
-        </section>
-
-        {/* Common Mistakes */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
-              <AlertTriangle className="w-7 h-7 text-primary" />
-              Common Advertising Mistakes in Sri Lanka
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-4 mb-4">
-              {[
-                { mistake: "Poor targeting", fix: "Use data-driven audience segmentation" },
-                { mistake: "Weak creatives", fix: "Invest in professional design and copywriting" },
-                { mistake: "No tracking", fix: "Implement analytics and conversion tracking" },
-                { mistake: "No strategy", fix: "Develop a comprehensive marketing plan" },
-              ].map(({ mistake, fix }) => (
-                <div key={mistake} className="p-4 rounded-xl border border-border bg-background">
-                  <p className="text-sm font-bold text-destructive mb-1">❌ {mistake}</p>
-                  <p className="text-xs text-muted-foreground">✔ Fix: {fix}</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-sm text-primary font-medium">👉 Fixing these mistakes can dramatically improve your ROI</p>
-          </div>
-        </section>
-
-        {/* Target Locations */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
-              <MapPin className="w-7 h-7 text-primary" />
-              Target Locations We Serve Across Sri Lanka
-            </h2>
-            <div className="flex flex-wrap gap-3">
-              {["Colombo", "Negombo", "Kandy", "Galle", "Maharagama", "Dehiwala", "Jaffna", "Kurunegala", "Matara", "Batticaloa"].map(city => (
-                <span key={city} className="px-4 py-2 rounded-full border border-border bg-background text-sm font-medium">
-                  📍 {city}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose Cypher Digital - Enhanced */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">How Cypher Digital Helps You Succeed</h2>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-              We provide end-to-end advertising solutions designed to maximize your brand visibility and ROI in Sri Lanka.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-3">
-              {[
-                "Data-driven strategy development",
-                "Multi-channel campaign execution",
-                "Continuous performance optimization",
-                "Transparent reporting & analytics",
-                "Industry-specific expertise",
-                "Proven results across sectors",
-              ].map(item => (
-                <div key={item} className="flex items-center gap-2 p-3 rounded-lg bg-secondary text-sm font-medium">
-                  <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" /> {item}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Ready to Dominate CTA */}
-        <section className="mb-16">
-          <div className="max-w-4xl mx-auto text-center p-8 rounded-2xl border-2 border-primary/20 bg-primary/5">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Ready to Dominate Advertising in Sri Lanka?</h2>
-            <p className="text-muted-foreground leading-relaxed text-lg mb-6 max-w-2xl mx-auto">
-              Stop wasting budget on ineffective campaigns and start running high-performance advertising that delivers measurable business growth.
-            </p>
-            <p className="text-primary font-bold text-lg">👉 Partner with Cypher Digital today.</p>
           </div>
         </section>
 
