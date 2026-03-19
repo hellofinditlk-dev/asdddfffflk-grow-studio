@@ -59,6 +59,7 @@ export interface IndustryData {
 export const industries: IndustryData[] = [
   {
     slug: "hotel-digital-marketing-sri-lanka",
+    shortName: "Hotel",
     seoTitle: "Hotel Digital Marketing Sri Lanka | Increase Direct Bookings | Cypher Digital",
     metaDescription: "Expert hotel digital marketing in Sri Lanka. SEO, social media, Google Ads & conversion optimization to increase direct bookings and reduce OTA dependency.",
     h1: "Hotel Digital Marketing in Sri Lanka: The Ultimate Strategy to Increase Direct Bookings",
