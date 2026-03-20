@@ -6,7 +6,7 @@ const BlogPost22 = () => (
   <>
     <SEOHead title="Technical SEO Checklist for Better Website Performance" description="A technical SEO checklist — site speed, mobile responsiveness, crawlability, sitemaps, and fixing common issues for better rankings." canonical="https://cypherdigital.lk/blog/technical-seo-checklist-better-website-performance" />
     <PageBreadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Article" }]} />
-      <article className="pt-24 pb-20">
+    <article className="pt-24 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <header className="mb-10">

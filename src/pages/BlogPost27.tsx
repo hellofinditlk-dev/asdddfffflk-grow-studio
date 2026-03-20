@@ -6,7 +6,7 @@ const BlogPost27 = () => (
   <>
     <SEOHead title="Why Industry-Specific Digital Marketing Is Important for Businesses in Sri Lanka" description="Learn why industry-specific digital marketing strategies are essential for Sri Lankan businesses — hotels, travel, fashion, restaurants, real estate, education, and more." canonical="https://cypherdigital.lk/blog/why-industry-specific-digital-marketing-important-businesses-sri-lanka" />
     <PageBreadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Article" }]} />
-      <article className="pt-24 pb-20">
+    <article className="pt-24 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <header className="mb-10">

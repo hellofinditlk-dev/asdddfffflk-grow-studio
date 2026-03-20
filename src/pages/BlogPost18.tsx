@@ -10,7 +10,7 @@ const BlogPost18 = () => (
       canonical="https://cypherdigital.lk/blog/how-to-rank-on-google-sri-lanka-practical-guide"
     />
     <PageBreadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Article" }]} />
-      <article className="pt-24 pb-20">
+    <article className="pt-24 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <header className="mb-10">

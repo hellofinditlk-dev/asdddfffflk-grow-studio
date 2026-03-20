@@ -6,7 +6,7 @@ const BlogPost24 = () => (
   <>
     <SEOHead title="Graphic Design Mistakes That Can Damage Your Brand" description="Avoid common graphic design mistakes — inconsistency, clutter, low quality, and poor mobile optimization that damage brand perception." canonical="https://cypherdigital.lk/blog/graphic-design-mistakes-damage-brand" />
     <PageBreadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Article" }]} />
-      <article className="pt-24 pb-20">
+    <article className="pt-24 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <header className="mb-10">

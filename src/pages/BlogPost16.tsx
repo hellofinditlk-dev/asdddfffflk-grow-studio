@@ -10,7 +10,7 @@ const BlogPost16 = () => (
       canonical="https://cypherdigital.lk/blog/social-media-design-best-practices-better-engagement"
     />
     <PageBreadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Article" }]} />
-      <article className="pt-24 pb-20">
+    <article className="pt-24 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <header className="mb-10">

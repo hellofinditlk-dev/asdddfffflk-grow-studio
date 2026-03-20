@@ -6,7 +6,7 @@ const BlogPost23 = () => (
   <>
     <SEOHead title="Video Marketing Strategy Guide for Sri Lankan Businesses" description="Build an effective video marketing strategy — goals, formats, consistency, and distribution for Sri Lankan businesses." canonical="https://cypherdigital.lk/blog/video-marketing-strategy-guide-sri-lankan-businesses" />
     <PageBreadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Article" }]} />
-      <article className="pt-24 pb-20">
+    <article className="pt-24 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <header className="mb-10">

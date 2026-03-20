@@ -6,7 +6,7 @@ const BlogPost26 = () => (
   <>
     <SEOHead title="On-Page SEO Guide for Better Rankings" description="On-page SEO guide — titles, meta descriptions, headings, internal linking, content structure, and keyword intent for better rankings." canonical="https://cypherdigital.lk/blog/on-page-seo-guide-better-rankings" />
     <PageBreadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Article" }]} />
-      <article className="pt-24 pb-20">
+    <article className="pt-24 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <header className="mb-10">

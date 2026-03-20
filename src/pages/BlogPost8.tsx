@@ -10,7 +10,7 @@ const BlogPost8 = () => (
       canonical="https://cypherdigital.lk/blog/why-seo-important-long-term-business-growth"
     />
     <PageBreadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Article" }]} />
-      <article className="pt-24 pb-20">
+    <article className="pt-24 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <header className="mb-10">

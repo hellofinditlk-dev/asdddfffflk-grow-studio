@@ -6,7 +6,7 @@ const BlogPost20 = () => (
   <>
     <SEOHead title="Flyer Design Tips That Improve Marketing Results" description="Learn flyer design tips — clarity, visual hierarchy, branding consistency, and how professional design improves marketing results." canonical="https://cypherdigital.lk/blog/flyer-design-tips-improve-marketing-results" />
     <PageBreadcrumb items={[{ label: "Blog", href: "/blog" }, { label: "Article" }]} />
-      <article className="pt-24 pb-20">
+    <article className="pt-24 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <header className="mb-10">
