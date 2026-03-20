@@ -202,6 +202,7 @@ const Blog = () => (
       description="Expert digital marketing tips, strategies, and insights for businesses in Sri Lanka. Learn about social media, SEO, Google Ads, and more."
       canonical="https://cypherdigital.lk/blog"
     />
+    <PageBreadcrumb items={[{ label: "Blog" }]} />
     <div className="pt-24 pb-20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">

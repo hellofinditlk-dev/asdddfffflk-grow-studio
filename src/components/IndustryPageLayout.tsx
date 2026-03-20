@@ -102,6 +102,11 @@ const IndustryPageLayout = ({ data }: Props) => {
         />
       )}
 
+      <PageBreadcrumb items={[
+        { label: "Advertising in Sri Lanka", href: "/advertising-in-sri-lanka" },
+        { label: `${data.shortName} Digital Marketing` },
+      ]} />
+
       {/* Hero */}
       <section className="bg-foreground py-20 lg:py-28">
         <div className="container mx-auto px-4">
