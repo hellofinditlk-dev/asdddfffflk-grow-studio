@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
 import mascotGlasses from "@/assets/mascot-glasses.jpeg";
 
 const blogPosts = [
