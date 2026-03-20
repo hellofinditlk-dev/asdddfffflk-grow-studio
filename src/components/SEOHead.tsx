@@ -38,6 +38,8 @@ const SEOHead = ({ title, description, canonical }: SEOHeadProps) => {
 
     return () => {
       document.title = "Cypher Digital | Digital Marketing Agency Sri Lanka";
+      const canonicalLink = document.querySelector('link[rel="canonical"]');
+      if (canonicalLink) canonicalLink.remove();
     };
   }, [title, description, canonical]);
 
