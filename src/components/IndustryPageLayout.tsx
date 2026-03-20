@@ -73,12 +73,26 @@ const IndustryPageLayout = ({ data }: Props) => {
     ],
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://cypherdigital.lk" },
+      { "@type": "ListItem", position: 2, name: "Advertising in Sri Lanka", item: "https://cypherdigital.lk/advertising-in-sri-lanka" },
+      { "@type": "ListItem", position: 3, name: `${data.shortName} Digital Marketing`, item: canonical },
+    ],
+  };
+
   return (
     <div className="pt-16">
       <SEOHead title={data.seoTitle} description={data.metaDescription} canonical={canonical} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {data.serviceSchema && (
         <script
