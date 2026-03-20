@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import InquiryForm from "@/components/InquiryForm";
+import PageBreadcrumb from "@/components/PageBreadcrumb";
 import { useEffect } from "react";
 import {
   TrendingUp, Users, Eye, Globe, ShoppingCart, ArrowRight, CheckCircle2,
