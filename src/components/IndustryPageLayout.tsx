@@ -102,7 +102,6 @@ const IndustryPageLayout = ({ data }: Props) => {
       )}
 
       <PageBreadcrumb items={[
-        { label: "Advertising in Sri Lanka", href: "/advertising-in-sri-lanka" },
         { label: `${data.shortName} Digital Marketing` },
       ]} />
 
