@@ -107,6 +107,9 @@ const App = () => (
             <Route path="/blog/tiktok-ads-vs-facebook-ads-sri-lankan-businesses" element={<BlogPost30 />} />
             <Route path="/blog/tiktok-influencer-marketing-guide-sri-lankan-brands" element={<BlogPost31 />} />
             <Route path="/blog/tiktok-marketing-hotels-tourism-sri-lanka" element={<BlogPost32 />} />
+            <Route path="/blog/ultimate-guide-advertising-sri-lanka" element={<BlogPost33 />} />
+            <Route path="/blog/why-digital-advertising-replacing-traditional-sri-lanka" element={<BlogPost34 />} />
+            <Route path="/blog/cost-effective-advertising-strategies-sri-lankan-businesses" element={<BlogPost35 />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/advertising-in-sri-lanka" element={<AdvertisingInSriLanka />} />
             {/* Industry pages */}
