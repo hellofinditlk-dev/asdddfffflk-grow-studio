@@ -228,6 +228,27 @@ const blogPosts = [
     date: "2026-03-21",
     keyword: "TikTok Marketing Sri Lanka",
   },
+  {
+    slug: "ultimate-guide-advertising-sri-lanka",
+    title: "The Ultimate Guide to Advertising in Sri Lanka (2026)",
+    excerpt: "Explore the complete evolution, types, and strategies for advertising in Sri Lanka — from traditional media to high-ROI digital platforms.",
+    date: "2026-03-22",
+    keyword: "Advertising in Sri Lanka",
+  },
+  {
+    slug: "why-digital-advertising-replacing-traditional-sri-lanka",
+    title: "Why Digital Advertising is Replacing Traditional Advertising in Sri Lanka",
+    excerpt: "Discover why Sri Lankan businesses are shifting from traditional advertising to digital — cost comparison, targeting, ROI, and the platforms driving growth.",
+    date: "2026-03-22",
+    keyword: "Advertising in Sri Lanka",
+  },
+  {
+    slug: "cost-effective-advertising-strategies-sri-lankan-businesses",
+    title: "Cost-Effective Advertising Strategies for Sri Lankan Businesses",
+    excerpt: "Discover the most cost-effective advertising strategies for Sri Lankan businesses — social media, Google Ads, SEO, content marketing, and email marketing.",
+    date: "2026-03-22",
+    keyword: "Advertising in Sri Lanka",
+  },
 ];
 
 const Blog = () => (
