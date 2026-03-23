@@ -39,6 +39,22 @@ const Footer = () => (
         </div>
 
         <div>
+          <h4 className="font-heading text-sm font-bold mb-4">Industries</h4>
+          <div className="flex flex-col gap-2.5 text-sm text-muted-foreground">
+            <Link to="/industry/hotel-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Hotel Marketing</Link>
+            <Link to="/industry/travel-agency-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Travel Agency</Link>
+            <Link to="/industry/fashion-brand-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Fashion Brand</Link>
+            <Link to="/industry/restaurant-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Restaurant</Link>
+            <Link to="/industry/real-estate-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Real Estate</Link>
+            <Link to="/industry/education-marketing-agency-sri-lanka" className="hover:text-foreground transition-colors">Education</Link>
+            <Link to="/industry/beauty-salon-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Beauty Salon</Link>
+            <Link to="/industry/automotive-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Automotive</Link>
+            <Link to="/industry/small-business-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Small Business</Link>
+            <Link to="/industry/ecommerce-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Ecommerce</Link>
+          </div>
+        </div>
+
+        <div>
           <h4 className="font-heading text-sm font-bold mb-4">Company</h4>
           <div className="flex flex-col gap-2.5 text-sm text-muted-foreground">
             <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
