@@ -57,6 +57,14 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const TrailingSlashRedirect = () => {
+  const { pathname, search, hash } = useLocation();
+  if (pathname !== "/" && pathname.endsWith("/")) {
+    return <Navigate to={pathname.slice(0, -1) + search + hash} replace />;
+  }
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
