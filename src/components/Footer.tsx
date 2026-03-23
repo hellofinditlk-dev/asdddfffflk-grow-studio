@@ -6,7 +6,7 @@ import mascotDefault from "@/assets/mascot-default.jpeg";
 const Footer = () => (
   <footer className="border-t border-border bg-secondary" role="contentinfo">
     <div className="container mx-auto px-4 py-16">
-      <div className="grid md:grid-cols-4 gap-10">
+      <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-10">
         <div>
           <div className="flex items-center gap-3 mb-3">
             <img src={logo} alt="Cypher Digital" className="h-8 w-auto" />
