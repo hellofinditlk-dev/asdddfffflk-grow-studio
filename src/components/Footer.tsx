@@ -6,7 +6,7 @@ import mascotDefault from "@/assets/mascot-default.jpeg";
 const Footer = () => (
   <footer className="border-t border-border bg-secondary" role="contentinfo">
     <div className="container mx-auto px-4 py-16">
-      <div className="grid md:grid-cols-4 gap-10">
+      <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-10">
         <div>
           <div className="flex items-center gap-3 mb-3">
             <img src={logo} alt="Cypher Digital" className="h-8 w-auto" />
@@ -35,6 +35,22 @@ const Footer = () => (
             <Link to="/seo-services-sri-lanka" className="hover:text-foreground transition-colors">SEO Services</Link>
             <Link to="/graphic-design-sri-lanka" className="hover:text-foreground transition-colors">Graphic Design</Link>
             <Link to="/tiktok-marketing-sri-lanka" className="hover:text-foreground transition-colors">TikTok Marketing</Link>
+          </div>
+        </div>
+
+        <div>
+          <h4 className="font-heading text-sm font-bold mb-4">Industries</h4>
+          <div className="flex flex-col gap-2.5 text-sm text-muted-foreground">
+            <Link to="/industry/hotel-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Hotel Marketing</Link>
+            <Link to="/industry/travel-agency-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Travel Agency</Link>
+            <Link to="/industry/fashion-brand-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Fashion Brand</Link>
+            <Link to="/industry/restaurant-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Restaurant</Link>
+            <Link to="/industry/real-estate-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Real Estate</Link>
+            <Link to="/industry/education-marketing-agency-sri-lanka" className="hover:text-foreground transition-colors">Education</Link>
+            <Link to="/industry/beauty-salon-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Beauty Salon</Link>
+            <Link to="/industry/automotive-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Automotive</Link>
+            <Link to="/industry/small-business-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Small Business</Link>
+            <Link to="/industry/ecommerce-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Ecommerce</Link>
           </div>
         </div>
 
