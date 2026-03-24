@@ -342,6 +342,9 @@ export default async function handler(request: Request, context: any) {
     '<div id="root"></div>',
     `<div id="root"><h1>${safeH1}</h1></div>`
   );
+
+  // Canonical tag
+  if (modified.match(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/)) {
     modified = modified.replace(
       /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/,
       `<link rel="canonical" href="${canonical}" />`
