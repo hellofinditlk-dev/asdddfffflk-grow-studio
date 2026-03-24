@@ -1,3 +1,8 @@
+# Redirect index files to root (prevent duplicate content)
+/index.html                                       /             301!
+/index.php                                        /             301!
+/index.htm                                        /             301!
+
 # Homepage
 /                                                 /index.html   200
 
