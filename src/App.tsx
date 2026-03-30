@@ -59,6 +59,7 @@ const BlogPost34 = lazy(() => import("./pages/BlogPost34"));
 const BlogPost35 = lazy(() => import("./pages/BlogPost35"));
 const AdvertisingInSriLanka = lazy(() => import("./pages/AdvertisingInSriLanka"));
 const IndustryPage = lazy(() => import("./pages/IndustryPage"));
+const DesignSubService = lazy(() => import("./pages/DesignSubService"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -135,6 +136,12 @@ const App = () => (
               <Route path="/blog/cost-effective-advertising-strategies-sri-lankan-businesses" element={<BlogPost35 />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/advertising-in-sri-lanka" element={<AdvertisingInSriLanka />} />
+              <Route path="/logo-design-sri-lanka" element={<DesignSubService />} />
+              <Route path="/brand-identity-design-sri-lanka" element={<DesignSubService />} />
+              <Route path="/company-profile-design-sri-lanka" element={<DesignSubService />} />
+              <Route path="/social-media-design-sri-lanka" element={<DesignSubService />} />
+              <Route path="/facebook-ad-design-sri-lanka" element={<DesignSubService />} />
+              <Route path="/instagram-post-design-sri-lanka" element={<DesignSubService />} />
               <Route path="/:slug" element={<IndustryPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
