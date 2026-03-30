@@ -6,7 +6,7 @@ import mascotDefault from "@/assets/mascot-default.jpeg";
 const Footer = () => (
   <footer className="border-t border-border bg-secondary" role="contentinfo">
     <div className="container mx-auto px-4 py-16">
-      <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-10">
+      <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-10">
         <div>
           <div className="flex items-center gap-3 mb-3">
             <img src={logo} alt="Cypher Digital" className="h-8 w-auto" />
@@ -52,6 +52,18 @@ const Footer = () => (
             <Link to="/automotive-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Automotive</Link>
             <Link to="/small-business-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Small Business</Link>
             <Link to="/ecommerce-digital-marketing-sri-lanka" className="hover:text-foreground transition-colors">Ecommerce</Link>
+          </div>
+        </div>
+
+        <div>
+          <h4 className="font-heading text-sm font-bold mb-4">Design Services</h4>
+          <div className="flex flex-col gap-2.5 text-sm text-muted-foreground">
+            <Link to="/logo-design-sri-lanka" className="hover:text-foreground transition-colors">Logo Design</Link>
+            <Link to="/brand-identity-design-sri-lanka" className="hover:text-foreground transition-colors">Brand Identity</Link>
+            <Link to="/company-profile-design-sri-lanka" className="hover:text-foreground transition-colors">Company Profile</Link>
+            <Link to="/social-media-design-sri-lanka" className="hover:text-foreground transition-colors">Social Media Design</Link>
+            <Link to="/facebook-ad-design-sri-lanka" className="hover:text-foreground transition-colors">Facebook Ad Design</Link>
+            <Link to="/instagram-post-design-sri-lanka" className="hover:text-foreground transition-colors">Instagram Design</Link>
           </div>
         </div>
 

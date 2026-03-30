@@ -30,9 +30,39 @@ const META_MAP: Record<string, { title: string; description: string; h1: string 
     h1: "SEO Sri Lanka – Rank #1 on Google with Data-Driven SEO Services",
   },
   "/graphic-design-sri-lanka": {
-    title: "Graphic Design Sri Lanka (2026) | Professional Design Services | Cypher Digital",
-    description: "Professional graphic design services in Sri Lanka. Logos, branding, social media graphics, packaging & marketing collateral from LKR 6,000. 48hr turnaround. Unlimited revisions by Cypher Digital.",
+    title: "Graphic Design Sri Lanka | Creative Design Services | Cypher Digital",
+    description: "Professional graphic design services in Sri Lanka including logo design, social media creatives, print design & branding. Work with Cypher Digital.",
     h1: "Graphic Design Sri Lanka – Professional Design Services That Build Powerful Brands",
+  },
+  "/logo-design-sri-lanka": {
+    title: "Logo Design Sri Lanka | Custom Logo Designers",
+    description: "Creative logo design services in Sri Lanka to build strong brand identity.",
+    h1: "Logo Design Sri Lanka – Custom Logo Design Services for Strong Brand Identity",
+  },
+  "/brand-identity-design-sri-lanka": {
+    title: "Brand Identity Design Sri Lanka | Branding Experts",
+    description: "Complete brand identity design services including logos, colors & brand systems.",
+    h1: "Brand Identity Design Sri Lanka – Build a Powerful, Consistent Brand",
+  },
+  "/company-profile-design-sri-lanka": {
+    title: "Company Profile Design Sri Lanka | Business Profiles",
+    description: "Professional company profile designs for corporate branding and presentations.",
+    h1: "Company Profile Design Sri Lanka – Professional Business Profiles That Impress",
+  },
+  "/social-media-design-sri-lanka": {
+    title: "Social Media Design Sri Lanka | Creative Post Designs",
+    description: "High-quality social media post and ad designs for Facebook, Instagram & more.",
+    h1: "Social Media Design Sri Lanka – Scroll-Stopping Designs for Every Platform",
+  },
+  "/facebook-ad-design-sri-lanka": {
+    title: "Facebook Ad Design Sri Lanka | High-Converting Ads",
+    description: "Engaging Facebook ad creatives designed to increase clicks and conversions.",
+    h1: "Facebook Ad Design Sri Lanka – High-Converting Ad Creatives That Drive Results",
+  },
+  "/instagram-post-design-sri-lanka": {
+    title: "Instagram Post Design Sri Lanka | Creative Visuals",
+    description: "Eye-catching Instagram posts and story designs to boost engagement.",
+    h1: "Instagram Post Design Sri Lanka – Creative Visuals That Boost Engagement",
   },
   "/tiktok-marketing-sri-lanka": {
     title: "TikTok Marketing Sri Lanka (2026) | TikTok Ads & Viral Campaigns | Cypher Digital",
