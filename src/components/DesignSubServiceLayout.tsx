@@ -15,7 +15,7 @@ interface Props {
 }
 
 const DesignSubServiceLayout = ({ data }: Props) => {
-  const canonical = `https://cypherdigital.lk/${data.slug}`;
+  const canonical = `https://cypherdigital.lk/graphic-design-sri-lanka/${data.slug}`;
 
   // JSON-LD
   useEffect(() => {
@@ -63,7 +63,7 @@ const DesignSubServiceLayout = ({ data }: Props) => {
 
   const relatedServices = data.relatedServices
     .map((slug) => allDesignServiceMeta.find((s) => s.slug === slug))
-    .filter(Boolean);
+    .filter(Boolean) as typeof allDesignServiceMeta;
 
   return (
     <>
