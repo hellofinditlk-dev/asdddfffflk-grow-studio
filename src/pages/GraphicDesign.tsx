@@ -93,6 +93,7 @@ const tocItems = [
   { id: "what-is", label: "What is Graphic Design?" },
   { id: "why-important", label: "Why It's Important" },
   { id: "design-services", label: "Our Design Services" },
+  { id: "explore-services", label: "Explore All Services" },
   { id: "whats-included", label: "What's Included" },
   { id: "process", label: "Our Process" },
   { id: "design-principles", label: "Design Principles" },
@@ -307,7 +308,141 @@ const GraphicDesign = () => {
         </div>
       </section>
 
-      {/* What's Included */}
+      {/* Explore All Design Services */}
+      <section id="explore-services" className="py-16 bg-background scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">Explore All Our Design Services</h2>
+            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-10">Click on any service below to learn more about how we can help your business with specialized design solutions.</p>
+
+            {/* Branding & Identity */}
+            <div className="mb-8">
+              <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2"><PenTool className="w-4 h-4 text-primary" /> Branding & Identity</h3>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <Link to="/logo-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Logo Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Custom logo designs that build strong brand identity and recognition.</p>
+                </Link>
+                <Link to="/brand-identity-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Brand Identity Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Complete brand systems including logos, colors, typography & guidelines.</p>
+                </Link>
+                <Link to="/company-profile-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Company Profile Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Professional business profiles for corporate branding and presentations.</p>
+                </Link>
+              </div>
+            </div>
+
+            {/* Social Media Design */}
+            <div className="mb-8">
+              <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2"><Smartphone className="w-4 h-4 text-primary" /> Social Media Design</h3>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <Link to="/social-media-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Social Media Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Scroll-stopping post designs for Facebook, Instagram & all platforms.</p>
+                </Link>
+                <Link to="/facebook-ad-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Facebook Ad Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">High-converting Facebook ad creatives that maximize your ROAS.</p>
+                </Link>
+                <Link to="/instagram-post-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Instagram Post Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Creative Instagram posts, stories & carousel designs for engagement.</p>
+                </Link>
+              </div>
+            </div>
+
+            {/* Advertising & Marketing Design */}
+            <div className="mb-8">
+              <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2"><Megaphone className="w-4 h-4 text-primary" /> Advertising & Marketing Design</h3>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <Link to="/banner-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Banner Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Display & web banner ads for Google, websites & digital campaigns.</p>
+                </Link>
+                <Link to="/email-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Email Newsletter Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Professional email templates & newsletter designs for campaigns.</p>
+                </Link>
+                <Link to="/landing-page-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Landing Page Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Conversion-focused landing pages that generate leads and sales.</p>
+                </Link>
+              </div>
+            </div>
+
+            {/* Web & UI Design */}
+            <div className="mb-8">
+              <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2"><Layout className="w-4 h-4 text-primary" /> Web & UI Design</h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <Link to="/ui-ux-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">UI/UX Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">User-centered website & app design for better experiences and conversions.</p>
+                </Link>
+                <Link to="/website-ui-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Website UI Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Modern, responsive website designs that improve user experience.</p>
+                </Link>
+              </div>
+            </div>
+
+            {/* Print Design */}
+            <div className="mb-8">
+              <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2"><Image className="w-4 h-4 text-primary" /> Print Design</h3>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <Link to="/flyer-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Flyer Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Eye-catching flyer & leaflet designs for promotions and events.</p>
+                </Link>
+                <Link to="/brochure-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Brochure Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Corporate brochure designs for marketing and product promotions.</p>
+                </Link>
+                <Link to="/poster-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Poster Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Creative advertising posters for events, promotions & campaigns.</p>
+                </Link>
+              </div>
+            </div>
+
+            {/* Packaging, Motion & Corporate */}
+            <div className="mb-8">
+              <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2"><Package className="w-4 h-4 text-primary" /> Packaging, Motion & Corporate</h3>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <Link to="/packaging-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Packaging Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Product packaging & label design.</p>
+                </Link>
+                <Link to="/motion-graphics-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Motion Graphics Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Animated ads & explainer videos.</p>
+                </Link>
+                <Link to="/video-ad-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Video Ad Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">High-impact video ad creatives.</p>
+                </Link>
+                <Link to="/presentation-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Presentation Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">PowerPoint & pitch deck design.</p>
+                </Link>
+              </div>
+            </div>
+
+            {/* Infographic */}
+            <div>
+              <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2"><BarChart3 className="w-4 h-4 text-primary" /> Data Visualization</h3>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <Link to="/infographic-design-sri-lanka" className="p-5 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors group">
+                  <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">Infographic Design Sri Lanka</h4>
+                  <p className="text-xs text-muted-foreground">Creative infographics to present data visually and clearly.</p>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="whats-included" className="py-16 bg-background scroll-mt-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
