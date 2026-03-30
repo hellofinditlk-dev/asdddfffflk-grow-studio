@@ -177,7 +177,7 @@ const DesignSubServiceLayout = ({ data }: Props) => {
               {relatedServices.map((s) => s && (
                 <Link
                   key={s.slug}
-                  to={`/${s.slug}`}
+                  to={`/graphic-design-sri-lanka/${s.slug}`}
                   className="p-5 rounded-xl bg-card border border-border hover:border-primary/30 transition-colors text-center group"
                 >
                   <Sparkles className="w-6 h-6 text-primary mx-auto mb-3" />
