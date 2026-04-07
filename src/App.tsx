@@ -21,6 +21,10 @@ const GraphicDesign = lazy(() => import("./pages/GraphicDesign"));
 const TikTokMarketing = lazy(() => import("./pages/TikTokMarketing"));
 const InfluencerMarketing = lazy(() => import("./pages/InfluencerMarketing"));
 const EventManagement = lazy(() => import("./pages/EventManagement"));
+const CorporateEventManagement = lazy(() => import("./pages/CorporateEventManagement"));
+const WeddingPlanning = lazy(() => import("./pages/WeddingPlanning"));
+const EventMarketing = lazy(() => import("./pages/EventMarketing"));
+const ProductLaunchEvents = lazy(() => import("./pages/ProductLaunchEvents"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost1 = lazy(() => import("./pages/BlogPost1"));
@@ -167,6 +171,10 @@ const App = () => (
               <Route path="/infographic-design-sri-lanka" element={<DesignSubService />} />
               <Route path="/label-design-sri-lanka" element={<DesignSubService />} />
               <Route path="/event-management-sri-lanka" element={<EventManagement />} />
+              <Route path="/corporate-event-management-sri-lanka" element={<CorporateEventManagement />} />
+              <Route path="/wedding-planning-sri-lanka" element={<WeddingPlanning />} />
+              <Route path="/event-marketing-sri-lanka" element={<EventMarketing />} />
+              <Route path="/product-launch-events-sri-lanka" element={<ProductLaunchEvents />} />
               <Route path="/:slug" element={<IndustryPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
